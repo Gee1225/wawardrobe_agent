@@ -1,0 +1,1356 @@
+[
+  {
+    "id": "jcrew-rugby-navy",
+    "name": "Rugby Pullover Sweatshirt",
+    "brand": "J.Crew Factory",
+    "color": "Navy",
+    "category": "Top",
+    "sub_category": "Sweatshirt",
+    "warmth": "Medium",
+    "style_tags": [
+      "Casual",
+      "Preppy",
+      "Collared"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 70,
+      "conditions": [
+        "Cool",
+        "Breezy"
+      ]
+    },
+    "image_url": "https://factory.jcrew.com/p/BW509?color_name=NAVY"
+  },
+  {
+    "id": "jcrew-thermal-green",
+    "name": "Long-sleeve Thermal Crewneck Tee",
+    "brand": "J.Crew Factory",
+    "color": "Smoke Teal (Green)",
+    "category": "Top",
+    "sub_category": "T-Shirt",
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Casual",
+      "Layering",
+      "Textured"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Mild",
+        "Indoor"
+      ]
+    },
+    "image_url": "https://factory.jcrew.com/p/CN240?color_name=SMOKE%20TEAL"
+  },
+  {
+    "id": "jcrew-quilted-slate",
+    "name": "Quilted Quarter-Zip Pullover",
+    "brand": "J.Crew Factory",
+    "color": "Heather Slate (Gray-Blue)",
+    "category": "Top",
+    "sub_category": "Sweatshirt",
+    "warmth": "Medium-High",
+    "style_tags": [
+      "Smart Casual",
+      "Textured",
+      "Quiet Luxury"
+    ],
+    "weather_compatibility": {
+      "min_temp": 40,
+      "max_temp": 65,
+      "conditions": [
+        "Cool",
+        "Chilly"
+      ]
+    },
+    "image_url": "https://factory.jcrew.com/p/BS847?color_name=heather-slate"
+  },
+  {
+    "id": "josbank-pima-lightblue",
+    "name": "Tailored Fit Pima Cotton 1/4 Zip",
+    "brand": "Jos. A. Bank",
+    "color": "Light Blue",
+    "category": "Top",
+    "sub_category": "Sweater",
+    "warmth": "Medium",
+    "style_tags": [
+      "Business Casual",
+      "Professional",
+      "Clean"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 70,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    },
+    "image_url": "https://www.josbank.com/p/jos-a-bank-tailored-fit-pima-cotton-14-zip-sweater-6DDB"
+  },
+  {
+    "id": "josbank-jacquard-beige",
+    "name": "Tailored Fit Shirt Front Jacquard Sweater",
+    "brand": "Jos. A. Bank",
+    "color": "Cartouche Heather (Beige)",
+    "category": "Top",
+    "sub_category": "Sweater",
+    "warmth": "Medium",
+    "style_tags": [
+      "Professional",
+      "Textured",
+      "Polished"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 70,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    },
+    "image_url": "https://www.josbank.com/p/jos-a-bank-tailored-fit-shirt-front-jacquard-sweater-clearance"
+  },
+  {
+    "id": "mk-snorkel-parka",
+    "name": "Hooded Bib Snorkel Parka",
+    "brand": "Michael Kors",
+    "color": "White (or Neutral)",
+    "category": "Outerwear",
+    "sub_category": "Parka",
+    "warmth": "Extreme",
+    "style_tags": [
+      "Heavy Winter",
+      "Functional",
+      "Water Resistant"
+    ],
+    "weather_compatibility": {
+      "min_temp": -20,
+      "max_temp": 40,
+      "conditions": [
+        "Snow",
+        "Freezing",
+        "Wind"
+      ]
+    },
+    "image_url": "https://www.macys.com/shop/product/michael-kors-mens-hooded-bib-snorkel-parka-created-for-macys?ID=2889924"
+  },
+  {
+    "id": "ck-hipster-jacket",
+    "name": "Hipster Full-Zip Jacket",
+    "brand": "Calvin Klein",
+    "color": "Black",
+    "category": "Outerwear",
+    "sub_category": "Jacket",
+    "warmth": "High",
+    "style_tags": [
+      "Modern",
+      "Sleek",
+      "Zip-out Hood"
+    ],
+    "weather_compatibility": {
+      "min_temp": 30,
+      "max_temp": 55,
+      "conditions": [
+        "Rain",
+        "Chilly",
+        "Wind"
+      ]
+    },
+    "image_url": "https://www.macys.com/shop/product/calvin-klein-mens-hipster-full-zip-jacket?ID=16229541"
+  },
+  {
+    "id": "alfani-purple-slim",
+    "name": "Purple Slim Fit Shirt",
+    "brand": "Alfani",
+    "color": "Purple",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Business Casual",
+      "Professional"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "habit-checked-blue-white",
+    "name": "Blue and White Checked Shirt",
+    "brand": "Habit",
+    "color": "Blue/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Checked",
+      "Weekend"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-white",
+    "name": "White Shirt",
+    "brand": "Galaxy by Harvic",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Basic",
+      "Layering"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "statement-checked-red-white",
+    "name": "Red and White Checked Shirt",
+    "brand": "Statement Confidence",
+    "color": "Red/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Bold",
+      "Checked",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "thomas-stone-white",
+    "name": "White Shirt",
+    "brand": "Thomas Stone",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Formal",
+      "Clean",
+      "Business"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Formal"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-black",
+    "name": "Black Shirt",
+    "brand": "Galaxy by Harvic",
+    "color": "Black",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Sleek",
+      "Modern",
+      "Night Out"
+    ],
+    "weather_compatibility": {
+      "min_temp": 55,
+      "max_temp": 80,
+      "conditions": [
+        "Evening",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-checked-blue-white",
+    "name": "Blue and White Checked Shirt",
+    "brand": "Galaxy by Harvic",
+    "color": "Blue/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Checked",
+      "Everyday"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-lightblue",
+    "name": "Light Blue Shirt",
+    "brand": "Galaxy by Harvic",
+    "color": "Light Blue",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Fresh",
+      "Summer"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Hot"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-red-white",
+    "name": "Red and White Shirt",
+    "brand": "Galaxy by Harvic",
+    "color": "Red/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Bold",
+      "Weekend"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "st-michael-white",
+    "name": "White Shirt",
+    "brand": "St Michael",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Classic",
+      "Vintage",
+      "Formal"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Formal"
+      ]
+    }
+  },
+  {
+    "id": "george-black-poked",
+    "name": "Black Poked Shirt",
+    "brand": "George",
+    "color": "Black",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Casual",
+      "Textured",
+      "Everyday"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "zara-brown-sweater",
+    "name": "Polyester Brown Sweater",
+    "brand": "Zara",
+    "color": "Brown",
+    "category": "Top",
+    "sub_category": "Sweater",
+    "warmth": "Medium",
+    "style_tags": [
+      "Modern",
+      "Minimalist",
+      "Layering"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 65,
+      "conditions": [
+        "Fall",
+        "Cool"
+      ]
+    }
+  },
+  {
+    "id": "nautical-checked-blue-white",
+    "name": "Blue/White Checked Shirt",
+    "brand": "Nautical",
+    "color": "Blue/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Preppy",
+      "Summer",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "magnify-white",
+    "name": "White Shirt",
+    "brand": "Magnify",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Clean",
+      "Basic",
+      "Formal"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Formal"
+      ]
+    }
+  },
+  {
+    "id": "ct-checked-blue-white",
+    "name": "Blue/White Checked Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Blue/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Business Casual",
+      "High Quality",
+      "Office"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Business"
+      ]
+    }
+  },
+  {
+    "id": "nautical-stretched-blue-white",
+    "name": "Blue/White Stretched Shirt",
+    "brand": "Nautical",
+    "color": "Blue/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "warmth": "Light",
+    "style_tags": [
+      "Comfort",
+      "Casual",
+      "Stretch"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Active",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "george-blue-poly-pants",
+    "name": "Blue Polyester Pants",
+    "brand": "George",
+    "color": "Blue",
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Casual",
+      "Durable",
+      "Everyday"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "wrangler-gym-pants",
+    "name": "Premium Gym Pants",
+    "brand": "Wrangler",
+    "color": "Unknown",
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Athleisure",
+      "Comfort",
+      "Gym"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Active",
+        "Casual"
+      ]
+    }
+  },
+  {
+    "id": "levi-signature-jeans",
+    "name": "Signature Jeans",
+    "brand": "Levi Strauss & Co",
+    "color": "Blue",
+    "category": "Bottom",
+    "sub_category": "Jeans",
+    "warmth": "Medium",
+    "style_tags": [
+      "Classic",
+      "Denim",
+      "Rugged"
+    ],
+    "weather_compatibility": {
+      "min_temp": 40,
+      "max_temp": 70,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "lee-black-pants",
+    "name": "Black Pants",
+    "brand": "Lee",
+    "color": "Black",
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Casual",
+      "Workwear",
+      "Versatile"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "chino-straight-black-jack",
+    "name": "Straight Rotation Chino Pants",
+    "brand": "Unknown",
+    "color": "Black Jack",
+    "size": "32W 32L",
+    "quantity": 1,
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "warmth": "Medium",
+    "style_tags": [
+      "Straight Fit",
+      "Casual",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "flex-slim-dark-gray",
+    "name": "Slim Built-In Flex Five-Pocket Pants",
+    "brand": "Unknown",
+    "color": "Dark Gray",
+    "size": "32W 32L",
+    "quantity": 1,
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Flex",
+      "Modern"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "chino-slim-navy",
+    "name": "Slim Rotation Chino Pants",
+    "brand": "Unknown",
+    "color": "In the Navy",
+    "size": "32W 32L",
+    "quantity": 1,
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Chino",
+      "Smart Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "flex-slim-light-khaki",
+    "name": "Slim Built-In Flex Five-Pocket Pants",
+    "brand": "Unknown",
+    "color": "Light Khaki",
+    "size": "32W 32L",
+    "quantity": 1,
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Flex",
+      "Summer"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "flex-slim-light-gray",
+    "name": "Slim Built-In Flex Five-Pocket Pants",
+    "brand": "Unknown",
+    "color": "Light Gray",
+    "size": "32W 32L",
+    "quantity": 1,
+    "category": "Bottom",
+    "sub_category": "Pants",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Flex",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-scs0115pnk",
+    "name": "SF White & Red Non-Iron Stretch Print Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "White/Red",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "17 Collar 35 Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Non-Iron",
+      "Stretch",
+      "Print",
+      "Slim Fit",
+      "Business Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "ct-fon2665pnk",
+    "name": "SF Pink Non-Iron Twill Puppytooth Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 Collar 35 Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Non-Iron",
+      "Twill",
+      "Puppytooth",
+      "Slim Fit",
+      "Business Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "ct-foa0015llc",
+    "name": "SF Lilac Non-Iron Stretch Greenwich Weave Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lilac",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 Collar 36 Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Non-Iron",
+      "Stretch",
+      "Greenwich Weave",
+      "Slim Fit",
+      "Business Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "ct-csc0031lmn",
+    "name": "Button-Down Stretch Washed Oxford Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lemon Yellow",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Medium (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Button-Down",
+      "Stretch",
+      "Washed Oxford",
+      "Slim Fit",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild",
+        "Casual"
+      ]
+    }
+  },
+  {
+    "id": "ct-jeh0003lpk",
+    "name": "Performance Stretch Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Light Pink/White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Medium",
+    "warmth": "Light",
+    "style_tags": [
+      "Performance",
+      "Stretch",
+      "Business Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "ct-csc0018pnk",
+    "name": "Non-Iron Stretch Poplin Check Short Sleeve Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Medium Short Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Short Sleeve",
+      "Non-Iron",
+      "Stretch",
+      "Poplin",
+      "Check",
+      "Slim Fit",
+      "Summer"
+    ],
+    "weather_compatibility": {
+      "min_temp": 70,
+      "max_temp": 95,
+      "conditions": [
+        "Sunny",
+        "Hot",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "ct-csr2134afb",
+    "name": "Textured Flannel Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Airforce Blue",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Large (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Textured",
+      "Flannel",
+      "Slim Fit",
+      "Soft",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 65,
+      "conditions": [
+        "Cool",
+        "Fall",
+        "Chilly"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0291nav",
+    "name": "Navy Classic Fit Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Navy",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Classic Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Classic Fit",
+      "Stretch",
+      "Chino",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0295lmn",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lemon",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0290afb",
+    "name": "Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Airforce Blue",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Casual",
+      "Stretch",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0296tpe",
+    "name": "Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Taupe",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Casual",
+      "Stretch",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "jab-traveler-orange",
+    "name": "Traveler\u00ae Collection Slim Fit Spread Collar Dress Shirt",
+    "brand": "Jos. A. Bank",
+    "color": "Light Orange",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 X 34/35 (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Spread Collar",
+      "Traveler Collection",
+      "Slim Fit",
+      "Dress Shirt",
+      "Professional"
+    ],
+    "weather_compatibility": {
+      "min_temp": 60,
+      "max_temp": 85,
+      "conditions": [
+        "Office",
+        "Mild"
+      ]
+    }
+  },
+  {
+    "id": "construct-pique-polo-green",
+    "name": "Con.Struct Slim Fit Tennis Ball Tipped Pique Polo",
+    "brand": "Con.Struct",
+    "color": "Green",
+    "category": "Top",
+    "sub_category": "Polo",
+    "size": "Large (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Tennis Ball Tipped",
+      "Pique",
+      "Polo",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Warm",
+        "Hot"
+      ]
+    }
+  },
+  {
+    "id": "jab-traveler-polo-teal",
+    "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
+    "brand": "Jos. A. Bank",
+    "color": "Teal",
+    "category": "Top",
+    "sub_category": "Polo",
+    "size": "Large (Tailored Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Tailored Fit",
+      "Performance",
+      "Short Sleeve",
+      "Polo",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Warm",
+        "Hot"
+      ]
+    }
+  },
+  {
+    "id": "buckley-belt-black",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Black",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "One Size / Adjustable",
+    "warmth": "None",
+    "style_tags": [
+      "Classic",
+      "Braided",
+      "Elastic",
+      "Casual",
+      "Versatile"
+    ],
+    "weather_compatibility": {
+      "min_temp": -20,
+      "max_temp": 110,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "buckley-belt-cognac",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Cognac",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "One Size / Adjustable",
+    "warmth": "None",
+    "style_tags": [
+      "Classic",
+      "Braided",
+      "Elastic",
+      "Casual",
+      "Versatile"
+    ],
+    "weather_compatibility": {
+      "min_temp": -20,
+      "max_temp": 110,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "buckley-belt-brown",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Brown",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "One Size / Adjustable",
+    "warmth": "None",
+    "style_tags": [
+      "Classic",
+      "Braided",
+      "Elastic",
+      "Casual",
+      "Versatile"
+    ],
+    "weather_compatibility": {
+      "min_temp": -20,
+      "max_temp": 110,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0279tpe-34-34",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Taupe",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 34L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0270stn-32-34",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Stone",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "32W 34L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0270blk-32-34",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Black",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "32W 34L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-jep0317wht",
+    "name": "Smart Cotton Polo",
+    "brand": "Charles Tyrwhitt",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Polo",
+    "size": "Large",
+    "warmth": "Light",
+    "style_tags": [
+      "Smart Cotton",
+      "Polo",
+      "Casual",
+      "Semi-Formal"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Warm",
+        "Hot"
+      ]
+    }
+  },
+  {
+    "id": "ct-jep0456llc",
+    "name": "Smart Cotton Polo",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lilac",
+    "category": "Top",
+    "sub_category": "Polo",
+    "size": "Large",
+    "warmth": "Light",
+    "style_tags": [
+      "Smart Cotton",
+      "Polo",
+      "Casual",
+      "Semi-Formal"
+    ],
+    "weather_compatibility": {
+      "min_temp": 65,
+      "max_temp": 90,
+      "conditions": [
+        "Sunny",
+        "Warm",
+        "Hot"
+      ]
+    }
+  },
+  {
+    "id": "ct-csc0012vlt",
+    "name": "Short Sleeve Stretch Washed Oxford Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Large Short Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Short Sleeve",
+      "Stretch",
+      "Washed Oxford",
+      "Slim Fit",
+      "Casual",
+      "Summer"
+    ],
+    "weather_compatibility": {
+      "min_temp": 70,
+      "max_temp": 95,
+      "conditions": [
+        "Sunny",
+        "Hot",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "ct-csp0007wht",
+    "name": "Short Sleeve Non-Iron Poplin Ice Cream Print Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Large Short Sleeve (Slim Fit)",
+    "warmth": "Light",
+    "style_tags": [
+      "Short Sleeve",
+      "Non-Iron",
+      "Poplin",
+      "Print",
+      "Ice Cream",
+      "Slim Fit",
+      "Summer",
+      "Casual"
+    ],
+    "weather_compatibility": {
+      "min_temp": 70,
+      "max_temp": 95,
+      "conditions": [
+        "Sunny",
+        "Hot",
+        "Warm"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0274lgy",
+    "name": "SF Light Gray Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Light Gray",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0279tpe-34-32",
+    "name": "SF Taupe Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Taupe",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Slim Fit)",
+    "warmth": "Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  }
+]

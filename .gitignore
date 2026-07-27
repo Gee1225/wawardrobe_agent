@@ -1,0 +1,7 @@
+openclaw.json
+auth-profiles.json
+*.log
+__pycache__/
+.DS_Store
+scratch/
+test_*.py

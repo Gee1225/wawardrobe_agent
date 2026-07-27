@@ -1,0 +1,1060 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "4a0ce66b-9ae5-4d58-9d3e-3a6b4fd71a5d",
+      "agentId": "main",
+      "name": "Good morning! Time for your daily style check.",
+      "enabled": true,
+      "createdAtMs": 1772163301720,
+      "updatedAtMs": 1784890100991,
+      "schedule": {
+        "expr": "42 5 * * 1-5",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Good morning! Time for your daily style check.\n\n1. **Read Inventory:** Load `closet.json` to see what I currently own.\n2. **Read Deals:** Load `latest_clothing_deals.md` (if it exists) to get the deals that were found yesterday evening.\n3. **Check Weather:** Use the `exec` tool to run: `curl -s \"wttr.in/Bentonville+AR?format=%l:+%c+%t+%w\"`\n4. **Outfit Pick:** Recommend the best combination from my `closet.json` for today's weather. Explain why.\n5. **Format Output:** Output a final summary containing the 🌤️ Weather, the 👔 OOTD, and the 🛍️ Deals (copied from the file). This output will be automatically sent to my Telegram.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785148920000,
+        "lastRunAtMs": 1784890076279,
+        "lastStatus": "error",
+        "lastDurationMs": 24712,
+        "consecutiveErrors": 74,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "delivered",
+        "lastErrorReason": "model_not_found",
+        "lastDelivered": true,
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "3b63fbf4-b92e-4194-a666-26224c5459e1",
+      "agentId": "main",
+      "name": "Execute the 'viral-researcher' skill (Full Cycle).",
+      "enabled": true,
+      "createdAtMs": 1772249221325,
+      "updatedAtMs": 1784851875894,
+      "schedule": {
+        "expr": "0 18 * * 4",
+        "kind": "cron",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Execute the 'viral-researcher' skill (Full Cycle).\n1. Read `research/weekly_log.md` to see what trended this week.\n2. Pick the best topic.\n3. Generate the full 'Deep Dive' markdown file (like the H1B example).\n4. Send the user a Telegram message with:\n   - The Topic Headline\n   - A summary\n   - The content of the file (or a confirmation it was saved).",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "announce",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785452400000,
+        "lastRunAtMs": 1784849263746,
+        "lastStatus": "error",
+        "lastDurationMs": 2612148,
+        "consecutiveErrors": 15,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "delivered",
+        "lastErrorReason": "model_not_found",
+        "lastDelivered": true,
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "aea5e0ce-666d-469c-9913-5ddaad7bc924",
+      "agentId": "main",
+      "name": "Borderless Daily Scout",
+      "enabled": true,
+      "createdAtMs": 1772250058972,
+      "updatedAtMs": 1784898549492,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Research trending immigrant topics for 'Borderless'.\n1. Scan Reddit (r/expats, r/immigration, r/AskAnAfrican) and Google News for \"viral\" debates. Focus on: Money, Family Pressure, Mental Health, Return Anxiety. (Avoid purely visa/legal news).\n2. Save a brief summary of the top 3 topics to `research/log/weekly_log.md`.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1784984400000,
+        "lastRunAtMs": 1784898532788,
+        "lastStatus": "error",
+        "lastDurationMs": 16704,
+        "consecutiveErrors": 101,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Delivering to Telegram requires target <chatId>"
+      }
+    },
+    {
+      "id": "bd92b844-39a0-4db1-ad54-417513619b43",
+      "agentId": "main",
+      "name": "Borderless Thursday Producer",
+      "enabled": true,
+      "createdAtMs": 1772250071822,
+      "updatedAtMs": 1784846551833,
+      "schedule": {
+        "expr": "0 17 * * 4",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Create the Weekly 'Borderless' Script.\n1. Read `research/log/weekly_log.md` to see what was trending this week.\n2. Pick the most 'viral/emotional' topic (General Immigrant Focus).\n3. Write a full NotebookLM 'Deep Dive' script (Source Text).\n4. Save it to `research/scripts/YYYY-MM-DD_Topic.md`.\n5. Send the Headline and Summary to the user via Telegram.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1785448800000,
+        "lastRunAtMs": 1784844544874,
+        "lastStatus": "error",
+        "lastDurationMs": 2006959,
+        "consecutiveErrors": 15,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Delivering to Telegram requires target <chatId>"
+      }
+    },
+    {
+      "id": "c8acf892-1dea-40de-a542-7211c536580d",
+      "agentId": "main",
+      "name": "Act as the 'Borderless' Research Agent.",
+      "enabled": true,
+      "createdAtMs": 1772250076278,
+      "updatedAtMs": 1784852866375,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 4",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Act as the 'Borderless' Research Agent.\n\n1. **Scan:** Search for trending topics in the global immigrant/expat community (Reddit r/expats, Google News, X). Focus on *emotional* or *financial* debates (e.g., \"Black Tax,\" \"Loneliness,\" \"Return Anxiety,\" \"Cost of Living\").\n2. **Filter:** Ignore technical visa news (H1B/Green Card) unless it has a massive social impact. Focus on *universal* immigrant experiences.\n3. **Draft:** Select the #1 most engaging topic. Write a \"Deep Dive\" article (Markdown) optimized for NotebookLM (stats, real stories, 'hard truth' analysis). Save it to `research/YYYY-MM-DD_Topic.md`.\n4. **Notify:** Send the file path and a brief summary to the user via Telegram."
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "announce",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785452400000,
+        "lastRunAtMs": 1784851875894,
+        "lastStatus": "error",
+        "lastDurationMs": 990481,
+        "consecutiveErrors": 15,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "HttpError: Network request for 'sendMessage' failed!"
+      }
+    },
+    {
+      "id": "5266876f-ef44-4db5-a010-a1d98d3d74fe",
+      "agentId": "main",
+      "name": "Reminder: The \"Communication Temptation\" Protocol",
+      "enabled": true,
+      "createdAtMs": 1772945773134,
+      "updatedAtMs": 1784840917045,
+      "schedule": {
+        "tz": "America/Chicago",
+        "expr": "0 16 * * 1-5",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: The \"Communication Temptation\" Protocol\n\nThis involves deliberately setting up the home environment to make vocalization necessary.\n\n• Visible But Inaccessible: Use clear, plastic bins with tight lids for favorite snacks. Wait for the child to bring the bin to you, then model the word \"Open\" or \"Cookie\".\n• Piece-by-Piece Delivery: Instead of giving a bowl of goldfish crackers, give one at a time. This creates 20–30 \"learning trials\" in a single snack session.\n• Interrupted Chains: If the child is playing with a track, withhold one piece of the track. When they reach the gap, model the word \"Track\" or \"Help\"."
+      },
+      "state": {
+        "nextRunAtMs": 1784926800000,
+        "lastRunAtMs": 1784840881805,
+        "lastStatus": "error",
+        "lastDurationMs": 35240,
+        "consecutiveErrors": 70,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "74d6d4b6-3e2c-4c93-9cda-62d9aace2fa0",
+      "agentId": "main",
+      "name": "Reminder: Time-Delay and Mand-Model",
+      "enabled": true,
+      "createdAtMs": 1772945773148,
+      "updatedAtMs": 1784849261635,
+      "schedule": {
+        "tz": "America/Chicago",
+        "expr": "0 17 * * 1-5",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Time-Delay and Mand-Model\n\nThis mechanism shifts the burden of communication onto the child while providing a safety net of prompts.\n\n• Anticipatory Pausing: During a highly preferred activity like swinging or tickling, stop the activity abruptly. Wait 5 seconds while looking expectantly at the child. If they make any sound, immediately restart the activity.\n• Graduated Prompting: If the child does not respond to the pause, provide a partial prompt (e.g., \"S...\" for \"swing\") before giving the full model."
+      },
+      "state": {
+        "nextRunAtMs": 1784930400000,
+        "lastRunAtMs": 1784846551833,
+        "lastStatus": "error",
+        "lastDurationMs": 2709802,
+        "consecutiveErrors": 69,
+        "lastRunStatus": "error",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM request failed: network connection error.",
+        "lastError": "LLM request failed: network connection error."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "84aff740-72ad-419f-bc3b-9a72862874b0",
+      "agentId": "main",
+      "name": "Reminder: High-Probability (High-P) Request Sequences",
+      "enabled": true,
+      "createdAtMs": 1772945773156,
+      "updatedAtMs": 1784854079981,
+      "schedule": {
+        "tz": "America/Chicago",
+        "expr": "0 18 * * 1-5",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: High-Probability (High-P) Request Sequences\n\nTo build \"behavioral momentum\" and encourage a child who is hesitant to speak:\n\n• The Sequence: Ask the child to perform 3 simple actions they already enjoy and can do easily (e.g., \"Give me five,\" \"Touch your nose,\" \"Clap\").\n• The Vocal Target: Immediately after the third successful motor action, deliver the vocal prompt for a new word. The momentum of compliance from the motor tasks often carries over to a vocal attempt."
+      },
+      "state": {
+        "nextRunAtMs": 1784934000000,
+        "lastRunAtMs": 1784852866375,
+        "lastStatus": "error",
+        "lastDurationMs": 1213606,
+        "consecutiveErrors": 69,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "c60edaf5-0c17-4153-9909-4fd9d215c71b",
+      "agentId": "main",
+      "name": "Reminder: Stimulus-Stimulus Pairing (SSP)",
+      "enabled": true,
+      "createdAtMs": 1772945773165,
+      "updatedAtMs": 1784854112613,
+      "schedule": {
+        "expr": "0 19 * * 1-5",
+        "kind": "cron",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Stimulus-Stimulus Pairing (SSP)\n\nFor children who are not yet imitating sounds:\n\n• The Pairing: Sit with the child and make a silly, simple sound like \"Pop!\". Immediately after you make the sound, blow a bubble or give a tickle.\n• The Goal: Do not ask the child to repeat the sound. Over dozens of repetitions, the sound \"Pop\" becomes associated with the fun of bubbles. Eventually, the child will say \"Pop\" spontaneously because the sound itself has become reinforcing to them."
+      },
+      "state": {
+        "nextRunAtMs": 1784937600000,
+        "lastRunAtMs": 1784854103011,
+        "lastStatus": "error",
+        "lastDurationMs": 9602,
+        "consecutiveErrors": 70,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "33019486-0a75-4aa3-a5c3-7bdef084842a",
+      "agentId": "main",
+      "name": "Reminder: The \"Communication Temptation\" Protocol",
+      "enabled": true,
+      "createdAtMs": 1772945773222,
+      "updatedAtMs": 1784473207944,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: The \"Communication Temptation\" Protocol\n\nThis involves deliberately setting up the home environment to make vocalization necessary.\n\n• Visible But Inaccessible: Use clear, plastic bins with tight lids for favorite snacks. Wait for the child to bring the bin to you, then model the word \"Open\" or \"Cookie\".\\n• Piece-by-Piece Delivery: Instead of giving a bowl of goldfish crackers, give one at a time. This creates 20–30 \"learning trials\" in a single snack session.\n• Interrupted Chains: If the child is playing with a track, withhold one piece of the track. When they reach the gap, model the word \"Track\" or \"Help\"."
+      },
+      "state": {
+        "nextRunAtMs": 1784991600000,
+        "lastRunAtMs": 1784473200493,
+        "lastStatus": "error",
+        "lastDurationMs": 7451,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "c60a5852-468d-4310-ae2e-8d617c7b932c",
+      "agentId": "main",
+      "name": "Reminder: Time-Delay and Mand-Model",
+      "enabled": true,
+      "createdAtMs": 1772945773241,
+      "updatedAtMs": 1784476808154,
+      "schedule": {
+        "tz": "America/Chicago",
+        "kind": "cron",
+        "expr": "0 11 * * 6,0"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Time-Delay and Mand-Model\n\nThis mechanism shifts the burden of communication onto the child while providing a safety net of prompts.\n\n• Anticipatory Pausing: During a highly preferred activity like swinging or tickling, stop the activity abruptly. Wait 5 seconds while looking expectantly at the child. If they make any sound, immediately restart the activity.\n• Graduated Prompting: If the child does not respond to the pause, provide a partial prompt (e.g., \"S...\" for \"swing\") before giving the full model."
+      },
+      "state": {
+        "nextRunAtMs": 1784995200000,
+        "lastRunAtMs": 1784476800116,
+        "lastStatus": "error",
+        "lastDurationMs": 8038,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "1ad32dfe-68fd-43b4-a4b3-e1633eb35b92",
+      "agentId": "main",
+      "name": "Reminder: High-Probability (High-P) Request Sequences",
+      "enabled": true,
+      "createdAtMs": 1772945773272,
+      "updatedAtMs": 1784480423261,
+      "schedule": {
+        "tz": "America/Chicago",
+        "kind": "cron",
+        "expr": "0 12 * * 6,0"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: High-Probability (High-P) Request Sequences\n\nTo build \"behavioral momentum\" and encourage a child who is hesitant to speak:\n\n• The Sequence: Ask the child to perform 3 simple actions they already enjoy and can do easily (e.g., \"Give me five,\" \"Touch your nose,\" \"Clap\").\n• The Vocal Target: Immediately after the third successful motor action, deliver the vocal prompt for a new word. The momentum of compliance from the motor tasks often carries over to a vocal attempt."
+      },
+      "state": {
+        "nextRunAtMs": 1784998800000,
+        "lastRunAtMs": 1784480400884,
+        "lastStatus": "error",
+        "lastDurationMs": 22377,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "70771aae-4eb1-4562-8dc6-5621f08150bc",
+      "agentId": "main",
+      "name": "Reminder: Stimulus-Stimulus Pairing (SSP)",
+      "enabled": true,
+      "createdAtMs": 1772945773298,
+      "updatedAtMs": 1784484011286,
+      "schedule": {
+        "tz": "America/Chicago",
+        "kind": "cron",
+        "expr": "0 13 * * 6,0"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Stimulus-Stimulus Pairing (SSP)\n\nFor children who are not yet imitating sounds:\n\n• The Pairing: Sit with the child and make a silly, simple sound like \"Pop!\". Immediately after you make the sound, blow a bubble or give a tickle.\n• The Goal: Do not ask the child to repeat the sound. Over dozens of repetitions, the sound \"Pop\" becomes associated with the fun of bubbles. Eventually, the child will say \"Pop\" spontaneously because the sound itself has become reinforcing to them."
+      },
+      "state": {
+        "nextRunAtMs": 1785002400000,
+        "lastRunAtMs": 1784484000962,
+        "lastStatus": "error",
+        "lastDurationMs": 10324,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "fa24b581-cee4-44a4-b014-27a6acdb0c21",
+      "agentId": "main",
+      "name": "Reminder: The \"Communication Temptation\" Protocol",
+      "enabled": true,
+      "createdAtMs": 1772945773326,
+      "updatedAtMs": 1784487611723,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: The \"Communication Temptation\" Protocol\n\nThis involves deliberately setting up the home environment to make vocalization necessary.\n\n• Visible But Inaccessible: Use clear, plastic bins with tight lids for favorite snacks. Wait for the child to bring the bin to you, then model the word \"Open\" or \"Cookie\".\n• Piece-by-Piece Delivery: Instead of giving a bowl of goldfish crackers, give one at a time. This creates 20–30 \\\"learning trials\\\" in a single snack session.\n• Interrupted Chains: If the child is playing with a track, withhold one piece of the track. When they reach the gap, model the word \"Track\" or \"Help\"."
+      },
+      "state": {
+        "nextRunAtMs": 1785006000000,
+        "lastRunAtMs": 1784487600248,
+        "lastStatus": "error",
+        "lastDurationMs": 11475,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "8e45bf62-d3e5-42cd-86af-fca32b743945",
+      "agentId": "main",
+      "name": "Reminder: Time-Delay and Mand-Model",
+      "enabled": true,
+      "createdAtMs": 1772945773371,
+      "updatedAtMs": 1784491208311,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Time-Delay and Mand-Model\n\nThis mechanism shifts the burden of communication onto the child while providing a safety net of prompts.\n\n• Anticipatory Pausing: During a highly preferred activity like swinging or tickling, stop the activity abruptly. Wait 5 seconds while looking expectantly at the child. If they make any sound, immediately restart the activity.\n• Graduated Prompting: If the child does not respond to the pause, provide a partial prompt (e.g., \"S...\" for \"swing\") before giving the full model."
+      },
+      "state": {
+        "nextRunAtMs": 1785009600000,
+        "lastRunAtMs": 1784491200177,
+        "lastStatus": "error",
+        "lastDurationMs": 8134,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "31c77c05-0e20-434c-b7f4-74c5dc2aa28d",
+      "agentId": "main",
+      "name": "Reminder: High-Probability (High-P) Request Sequences",
+      "enabled": true,
+      "createdAtMs": 1772945773380,
+      "updatedAtMs": 1784494809868,
+      "schedule": {
+        "tz": "America/Chicago",
+        "kind": "cron",
+        "expr": "0 16 * * 6,0"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: High-Probability (High-P) Request Sequences\n\nTo build \"behavioral momentum\" and encourage a child who is hesitant to speak:\n\n• The Sequence: Ask the child to perform 3 simple actions they already enjoy and can do easily (e.g., \"Give me five,\" \"Touch your nose,\" \"Clap\").\n• The Vocal Target: Immediately after the third successful motor action, deliver the vocal prompt for a new word. The momentum of compliance from the motor tasks often carries over to a vocal attempt."
+      },
+      "state": {
+        "nextRunAtMs": 1785013200000,
+        "lastRunAtMs": 1784494800139,
+        "lastStatus": "error",
+        "lastDurationMs": 9729,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "99c2f8e1-6084-4681-a00f-4398596e34ca",
+      "agentId": "main",
+      "name": "Reminder: Stimulus-Stimulus Pairing (SSP)",
+      "enabled": true,
+      "createdAtMs": 1772945773392,
+      "updatedAtMs": 1784498409324,
+      "schedule": {
+        "expr": "0 17 * * 6,0",
+        "kind": "cron",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nReminder: Stimulus-Stimulus Pairing (SSP)\n\nFor children who are not yet imitating sounds:\n\n• The Pairing: Sit with the child and make a silly, simple sound like \"Pop!\". Immediately after you make the sound, blow a bubble or give a tickle.\n• The Goal: Do not ask the child to repeat the sound. Over dozens of repetitions, the sound \"Pop\" becomes associated with the fun of bubbles. Eventually, the child will say \"Pop\" spontaneously because the sound itself has become reinforcing to them."
+      },
+      "state": {
+        "nextRunAtMs": 1785016800000,
+        "lastRunAtMs": 1784498400161,
+        "lastStatus": "error",
+        "lastDurationMs": 9163,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "8510312060"
+      }
+    },
+    {
+      "id": "f6fda632-379c-45cc-b865-a2f888890d8e",
+      "agentId": "main",
+      "name": "Goal 1 (Weekday)",
+      "enabled": true,
+      "createdAtMs": 1773100938160,
+      "updatedAtMs": 1784843726804,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 16 * * 1-5",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 1: Thelma will initiate a peer interaction (e.g., greeting, asking to play, joining ongoing play, or sharing an item) in a naturalistic setting using gestures or her AAC device. Instructions: Teaching Peer Interaction at Home 1. Set up a play opportunity. Have your child and their sibling play near each other with a preferred toy or activity (blocks, dolls, a game, etc.). 2. Create a reason to interact. Give the sibling a toy your child likes, or have them start playing with something interesting. 3. Prompt the interaction if needed. Encourage your child to interact by modeling or gently prompting a greeting, asking to play, or sharing. This can be done using gestures or their AAC device (for example: “hi, ” “play, ” “my turn, ” or “want to play?”). 4. Give time to respond. Pause for a few seconds to allow your child to attempt the interaction independently. 5. Reinforce the interaction. When your child initiates with their sibling, provide praise (e.g., and allow the play activity to continue. “Great asking to play!”) 6. Keep practice short and positive. Practice during natural play times for a few minutes at a time so interactions stay fun and successful. Tip: The goal is simply to encourage your child to start the interaction. Any attempt using gestures or their AAC device should be praised and supported."
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "none",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1784928600000,
+        "lastRunAtMs": 1784843041160,
+        "lastStatus": "error",
+        "lastDurationMs": 685644,
+        "consecutiveErrors": 70,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "84728d7f-77c8-40ea-bbb5-7f7ed2557ea1",
+      "agentId": "main",
+      "name": "Goal 1 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938172,
+      "updatedAtMs": 1784475008250,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 10 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 1: Thelma will initiate a peer interaction (e.g., greeting, asking to play, joining ongoing play, or sharing an item) in a naturalistic setting using gestures or her AAC device. Instructions: Teaching Peer Interaction at Home 1. Set up a play opportunity. Have your child and their sibling play near each other with a preferred toy or activity (blocks, dolls, a game, etc.). 2. Create a reason to interact. Give the sibling a toy your child likes, or have them start playing with something interesting. 3. Prompt the interaction if needed. Encourage your child to interact by modeling or gently prompting a greeting, asking to play, or sharing. This can be done using gestures or their AAC device (for example: “hi, ” “play, ” “my turn, ” or “want to play?”). 4. Give time to respond. Pause for a few seconds to allow your child to attempt the interaction independently. 5. Reinforce the interaction. When your child initiates with their sibling, provide praise (e.g., and allow the play activity to continue. “Great asking to play!”) 6. Keep practice short and positive. Practice during natural play times for a few minutes at a time so interactions stay fun and successful. Tip: The goal is simply to encourage your child to start the interaction. Any attempt using gestures or their AAC device should be praised and supported.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "none",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1784993400000,
+        "lastRunAtMs": 1784475000075,
+        "lastStatus": "error",
+        "lastDurationMs": 8175,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "29e5bfe9-c9dc-4aba-a0f5-b9d7bf338738",
+      "agentId": "main",
+      "name": "Goal 2 (Weekday)",
+      "enabled": true,
+      "createdAtMs": 1773100938182,
+      "updatedAtMs": 1784854100451,
+      "schedule": {
+        "expr": "30 17 * * 1-5",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 2: Thelma will independently look both ways before crossing the street. Instructions: Teaching Looking Both Ways Before Crossing the Street 1. Practice during walks. When you and your child approach a street or driveway, pause together at the edge of the curb. 2. Model the skill. Say, “Let’s look both ways, ” and clearly look left and right so your child can see the behavior. 3. Prompt if needed. If your child does not look independently, gently prompt by pointing or saying “look left… look right. ” 4. Pause before crossing. Give your child a moment to look both ways before stepping into the street. 5. Provide praise. When your child looks both ways, provide praise such as “Great job checking for cars!” and then cross the street together. 6. Practice often. street. Continue practicing during walks so the routine becomes a habit before crossing any Tip: The goal is for your child to pause and check both directions before crossing, so praise any attempts to look both ways while learning."
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "8510312060",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1784932200000,
+        "lastRunAtMs": 1784854079981,
+        "lastStatus": "error",
+        "lastDurationMs": 20470,
+        "consecutiveErrors": 69,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "31251159-3032-4e2e-aa7f-41a0b8f39249",
+      "agentId": "main",
+      "name": "Goal 2 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938193,
+      "updatedAtMs": 1784478609362,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 11 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 2: Thelma will independently look both ways before crossing the street. Instructions: Teaching Looking Both Ways Before Crossing the Street 1. Practice during walks. When you and your child approach a street or driveway, pause together at the edge of the curb. 2. Model the skill. Say, “Let’s look both ways, ” and clearly look left and right so your child can see the behavior. 3. Prompt if needed. If your child does not look independently, gently prompt by pointing or saying “look left… look right. ” 4. Pause before crossing. Give your child a moment to look both ways before stepping into the street. 5. Provide praise. When your child looks both ways, provide praise such as “Great job checking for cars!” and then cross the street together. 6. Practice often. street. Continue practicing during walks so the routine becomes a habit before crossing any Tip: The goal is for your child to pause and check both directions before crossing, so praise any attempts to look both ways while learning.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "8510312060",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1784997000000,
+        "lastRunAtMs": 1784478600132,
+        "lastStatus": "error",
+        "lastDurationMs": 9230,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "86cc80a8-07a3-4e44-9074-b56349aff6f2",
+      "agentId": "main",
+      "name": "Goal 3 (Weekday)",
+      "enabled": true,
+      "createdAtMs": 1773100938204,
+      "updatedAtMs": 1784854122163,
+      "schedule": {
+        "expr": "30 18 * * 1-5",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 3: Thelma will receptively identify 20 adjectives. Mastered: full, empty, open, closed, clean, dirty, hot, cold, slow, fast Currently working on: happy/sad,big/little, quiet/loud Instructions: Teaching Adjectives (Understanding Describing Words) 1. Use the picture sheet or items around the house. You can practice using the picture page provided, or by pointing out objects in everyday routines (toys, food, clothing, etc.). 2. Give a simple direction. Ask your child to identify the adjective by saying something like: ○ “Show me big. ” ○ “Point to soft. ” ○ “Find the dirty one. ” 3. Allow time to respond. Give your child a few seconds to look and point to the correct item. 4. Provide help if needed. If they are unsure, you can point, narrow the choices, or model the correct answer and say the word again. 5. Praise correct responses. When your child identifies the correct picture or object, provide praise such as “Nice job finding big!” 6. Practice naturally throughout the day. You can also work on adjectives during everyday activities, such as: ○ “Get the big spoon. ” ○ ○ “Where is the cold drink?” “Touch the soft blanket. ” Tip: Keep practice short and fun, and focus on helping your child learn the meaning of describing words used in daily life.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "8510312060",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1784935800000,
+        "lastRunAtMs": 1784854112613,
+        "lastStatus": "error",
+        "lastDurationMs": 9550,
+        "consecutiveErrors": 69,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "e2aa82ce-17be-43c7-a16a-18f3145cc2dc",
+      "agentId": "main",
+      "name": "Goal 3 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938213,
+      "updatedAtMs": 1784482211558,
+      "schedule": {
+        "expr": "30 12 * * 6,0",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 3: Thelma will receptively identify 20 adjectives. Mastered: full, empty, open, closed, clean, dirty, hot, cold, slow, fast Currently working on: happy/sad,big/little, quiet/loud Instructions: Teaching Adjectives (Understanding Describing Words) 1. Use the picture sheet or items around the house. You can practice using the picture page provided, or by pointing out objects in everyday routines (toys, food, clothing, etc.). 2. Give a simple direction. Ask your child to identify the adjective by saying something like: ○ “Show me big. ” ○ “Point to soft. ” ○ “Find the dirty one. ” 3. Allow time to respond. Give your child a few seconds to look and point to the correct item. 4. Provide help if needed. If they are unsure, you can point, narrow the choices, or model the correct answer and say the word again. 5. Praise correct responses. When your child identifies the correct picture or object, provide praise such as “Nice job finding big!” 6. Practice naturally throughout the day. You can also work on adjectives during everyday activities, such as: ○ “Get the big spoon. ” ○ ○ “Where is the cold drink?” “Touch the soft blanket. ” Tip: Keep practice short and fun, and focus on helping your child learn the meaning of describing words used in daily life.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "to": "8510312060",
+        "mode": "none",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1785000600000,
+        "lastRunAtMs": 1784482200207,
+        "lastStatus": "error",
+        "lastDurationMs": 11351,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "d3779903-c681-44d0-8e48-9c408c66e346",
+      "agentId": "main",
+      "name": "Goal 4 (Weekday)",
+      "enabled": true,
+      "createdAtMs": 1773100938223,
+      "updatedAtMs": 1784854134760,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 19 * * 1-5",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 4:Thelma will receptively identify 5 prepositions. Mastered: “in” the box Currently working on: “beside” , “infront” , “between” Instructions: Teaching Prepositions (Understanding Location Words) 1. Use the picture sheet or items around the house. You can practice using the picture page provided, or by using toys and objects during play (blocks, stuffed animals, cups, etc.). 2. Give a simple direction. Ask your child to identify the location word by saying things like: ○ “Show me on. ” ○ “Point to under. ” ○ “Find in. ” 3. Allow time to respond. Give your child a few seconds to look and point to the correct picture or object. 4. Provide help if needed. If your child is unsure, you can model the answer by showing them and repeating the word (e.g., “This is under. ”). 5. Praise correct responses. Provide praise when your child responds correctly, such as “Great job finding under!” 6. Practice naturally during play. You can also practice during daily activities by using toys: ○ Put the toy in the box ○ Put the car on the table ○ Hide a toy under a blanket Tip: Practicing during everyday play helps your child learn how these location words are used in real situations.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "8510312060",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1784939400000,
+        "lastRunAtMs": 1784854122163,
+        "lastStatus": "error",
+        "lastDurationMs": 12597,
+        "consecutiveErrors": 71,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "3eeef5a0-4bd7-480f-9957-06a4144f568f",
+      "agentId": "main",
+      "name": "Goal 4 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938232,
+      "updatedAtMs": 1784485835609,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 13 * * 6,0",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 4:Thelma will receptively identify 5 prepositions. Mastered: “in” the box Currently working on: “beside” , “infront” , “between” Instructions: Teaching Prepositions (Understanding Location Words) 1. Use the picture sheet or items around the house. You can practice using the picture page provided, or by using toys and objects during play (blocks, stuffed animals, cups, etc.). 2. Give a simple direction. Ask your child to identify the location word by saying things like: ○ “Show me on. ” ○ “Point to under. ” ○ “Find in. ” 3. Allow time to respond. Give your child a few seconds to look and point to the correct picture or object. 4. Provide help if needed. If your child is unsure, you can model the answer by showing them and repeating the word (e.g., “This is under. ”). 5. Praise correct responses. Provide praise when your child responds correctly, such as “Great job finding under!” 6. Practice naturally during play. You can also practice during daily activities by using toys: ○ Put the toy in the box ○ Put the car on the table ○ Hide a toy under a blanket Tip: Practicing during everyday play helps your child learn how these location words are used in real situations.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "none",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785004200000,
+        "lastRunAtMs": 1784485800299,
+        "lastStatus": "error",
+        "lastDurationMs": 35310,
+        "consecutiveErrors": 29,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "7f7d1c42-75fe-4f0f-8af4-b72be04396ff",
+      "agentId": "main",
+      "name": "Goal 5 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938471,
+      "updatedAtMs": 1784489410570,
+      "schedule": {
+        "expr": "30 14 * * 6,0",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 5: Thelma will independently attend to non-preferred or neutral activities for 5 minutes. Instructions: Teaching Attending to Non-Preferred Activities 1. Choose a short activity. Select a simple activity that may not be your child’s favorite but is appropriate for their age (puzzle, worksheet, coloring, helping with a chore, etc.). 2. Set clear expectations. Let your child know the activity will last 5 minutes. Using a visual timer can be helpful so they can see when the activity will end. 3. Start the activity. Encourage your child to begin the task and remain engaged with the materials. 4. Provide encouragement as needed. If your child starts to lose focus, gently redirect them back to the activity by pointing to the task or reminding them to finish. 5. Reinforce completion. When your child attends to the activity for the full time, provide praise (e.g., staying with your work!”) and allow access to a preferred activity afterward. “Great job 6. Practice regularly. Practice with short activities during daily routines so your child becomes more comfortable staying engaged even when the activity is not their first choice. Tip: The goal is to help your child learn to stay engaged with tasks for short periods of time, which supports participation in school, home routines, and other structured activities."
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "8510312060",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1785007800000,
+        "lastRunAtMs": 1784489400159,
+        "lastStatus": "error",
+        "lastDurationMs": 10411,
+        "consecutiveErrors": 31,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "accfe20d-1656-43ea-b789-53b59af242e5",
+      "agentId": "main",
+      "name": "Goal 6 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938503,
+      "updatedAtMs": 1784493009720,
+      "schedule": {
+        "expr": "30 15 * * 6,0",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 6: Thelma will independently complete a 3-step clean up routine after meal time (e.g., throw trash away, place dish in sink, wiping the table). Instructions: Teaching the After-Meal Clean-Up Routine 1. Explain the routine. After your child finishes eating, remind them of the clean-up steps: 1) Wipe the table → 2) Throw trash away → 3) Put plate in the sink. A visual reminder or saying the steps together can be helpful. 2. Prompt the first step if needed. Encourage your child to start by wiping the table. If they need help, you can point to the table or model the action. 3. Guide through the remaining steps. After the table is wiped, prompt your child to throw the trash away, then place the plate in the sink. 4. Allow independence when possible. Give your child a moment to complete each step on their own before providing help. 5. Provide praise for completing the routine. When your child completes the steps, provide praise such as “Great job cleaning up after your meal!” 6. Practice consistently. Practice this routine after meals so it becomes a predictable part of the daily routine. Tip: Keeping the steps in the same order each time helps your child learn the routine and become more independent over time.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "none",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785011400000,
+        "lastRunAtMs": 1784493000125,
+        "lastStatus": "error",
+        "lastDurationMs": 9595,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "f2628152-1a90-4e3d-8838-f4b205222b6d",
+      "agentId": "main",
+      "name": "Goal 7 (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1773100938526,
+      "updatedAtMs": 1784496609141,
+      "schedule": {
+        "expr": "30 16 * * 6,0",
+        "tz": "America/Chicago",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Use the 'message' tool to send this exact text to Telegram user 8510312060 (channel=\"telegram\"):\n\nGoal 7: Thelma will use her AAC device for a variety of communicative functions independently 10 times per hour. Instructions: Supporting AAC Communication at Home The goal is for your child to use her AAC device frequently to communicate throughout the day. The device helps her express her needs, wants, comments, and feelings in a way others can understand. Ways to Encourage AAC Use 1. Keep the device nearby and available. Make sure the AAC device is always within reach so your child can use it during daily activities like meals, playtime, and routines. 2. Create opportunities to communicate. Pause during activities to give your child a chance to request or comment using her device. For example, before giving a snack or starting a preferred activity, wait a few seconds to encourage communication. 3. Model using the device. You can show your child how to use the AAC by pressing buttons and saying the word out loud (for example, pressing “eat, ” “play, ” or “help”). This helps them learn how the device can be used. 4. Respond to communication attempts. When your child uses the device, respond right away and praise the attempt (for example, “Nice job telling me you want play!”). 5. Encourage communication across situations. AAC can be used for many purposes, such as: ○ Requesting items or activities ○ Asking for help ○ Commenting or sharing ○ Greeting others ○ Saying “all done” Why This Is Important Frequent use of the AAC device helps your child communicate their needs instead of using behaviors to express frustration or wants. The more opportunities your child has to use the device, the more comfortable and independent they will become with communication.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "channel": "telegram",
+        "mode": "none",
+        "to": "8510312060"
+      },
+      "state": {
+        "nextRunAtMs": 1785015000000,
+        "lastRunAtMs": 1784496600148,
+        "lastStatus": "error",
+        "lastDurationMs": 8993,
+        "consecutiveErrors": 28,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    },
+    {
+      "id": "f3c6ecb9-d12d-493e-990e-60007dc25469",
+      "agentId": "main",
+      "name": "Evening Deal Hunter",
+      "enabled": true,
+      "createdAtMs": 1773538124363,
+      "updatedAtMs": 1784855557589,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * 0-4",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Hunt for clothing deals to be included in tomorrow morning's style check.\n\n1. Search the web for sales on men's clothing that complement the user's closet (e.g., Pants/Chinos to match tops, or shoes). Focus on size L tops / 34-36 pants (approx) and a high-contrast color palette (jewel tones, earth tones). Check J.Crew, Banana Republic, Theory, Suitsupply.\n2. Write the top 2-3 deals found (including links and a brief 'why') to a file named `latest_clothing_deals.md` in the workspace. Overwrite the file so it is fresh for the morning agent to read.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1785114000000,
+        "lastRunAtMs": 1784855324512,
+        "lastStatus": "error",
+        "lastDurationMs": 233077,
+        "consecutiveErrors": 71,
+        "lastRunStatus": "error",
+        "lastErrorReason": "model_not_found",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastDeliveryError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}",
+        "lastError": "LLM error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}"
+      }
+    }
+  ]
+}
