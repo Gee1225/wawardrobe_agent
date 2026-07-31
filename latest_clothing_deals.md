@@ -1,27 +1,32 @@
-Good evening! As your Evening Deal Hunter, I have combed through the latest online markdowns at your favorite professional retailers. Based on your wardrobe profile—specifically targeting sizes M/L in tops, 32-34W/32-34L in bottoms, and a color palette featuring high-contrast, rich jewel tones and warm earth tones—I have curated the top three active sales that will seamlessly elevate your professional style and pair beautifully with your existing closet.
+# Evening Deal Hunter’s Top Professional Clothing Deals
 
-Here are tonight's top sartorial opportunities:
+Good evening! I have analyzed your wardrobe profile and current closet inventory. While you have a solid selection of shirts (including classic white, light blue, and bold red/blue checks) and casual outerwear, **your closet is completely missing professional bottoms (trousers/dress pants)** and could use some high-end, structured layering pieces in your signature jewel and warm earth-tone palette. 
 
----
-
-### 1. Banana Republic Men's Tailored & Seasonal Sale
-* **Brand & Sale Name**: Banana Republic Men's Sale (Tailored Layers, Pants & Suiting)
-* **Details / Price**: Deep markdowns on premium professional apparel, including fine wool dress trousers, structured chinos, and Italian cotton dress shirts.
-* **Link**: [Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
-* **Styling Insight**: This sale is your premier destination for securing high-quality bottoms in your target **32-34W / 32-34L** size range. Look for tailored trousers in rich, warm earth tones like tobacco, espresso, or dark olive. These earth-toned bottoms will create a stunning, high-contrast foundation when paired with the lighter-colored tops already in your closet, such as your **Tailored Fit Pima Cotton 1/4 Zip (Light Blue)** or your crisp **Thomas Stone White Shirt**.
+Here are the top three active sale events handpicked to elevate your professional style, fill your wardrobe gaps, and fit your exact sizing.
 
 ---
 
-### 2. J.Crew Men's Sale: Tailored Clothing & Smart Casual Layers
-* **Brand & Sale Name**: J.Crew Men's Sale
-* **Details / Price**: Exceptional discounts on structured suiting separates, premium dress shirts, and luxury knits.
-* **Link**: [J.Crew Men's Sale](https://www.jcrew.com/sale/men)
-* **Styling Insight**: J.Crew is masterclass in jewel tones and classic American tailoring. Filter this sale for tops in **Medium or Large** to find structured blazers or fine merino wool sweaters in rich **emerald green** or **deep sapphire**. Slipping a jewel-toned merino crewneck over your **St Michael White Shirt** or **Habit Blue/White Checked Shirt** instantly elevates your look to high-contrast business professional while keeping you comfortably layered in cold office environments.
+### 1. Banana Republic Men’s Sale: Tailored Trousers & Earth-Toned Dress Pants
+* **Sale Details**: Up to 40% off seasonal markdowns on premium trousers, traveler pants, and structured suiting. 
+* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
+* **Styling Insight**: 
+  * **The Gap in Your Closet**: You currently have zero pants listed in your inventory! This sale is the perfect opportunity to secure high-quality professional bottoms in your size range (**32-34W and 32-34L**). 
+  * **Color & Coordination**: Look for their signature stretch-wool dress pants or rapid-movement chinos in warm earth tones like tobacco brown, olive green, or a rich deep sapphire navy. These rich, dark bottoms will pair beautifully with your existing light blue *Jos. A. Bank 1/4 Zip* or your crisp *Thomas Stone White Shirt*, creating an instantly polished, high-contrast professional look.
 
 ---
 
-### 3. Theory Men's End of Season Sale
-* **Brand & Sale Name**: Theory Men's End of Season Sale
-* **Details / Price**: Significant markdowns on premium, minimalist menswear staples, including precision-cut blazers, technical dress shirts, and modern office trousers.
-* **Link**: [Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight**: Theory is legendary for its sleek, high-contrast, modern silhouettes that fit your professional aesthetic perfectly. Look for a slim-fit blazer or unstructured sport coat in charcoal, deep navy, or rich burgundy (sizes **M** or **L**). Throwing a sharp Theory blazer over your existing **Galaxy by Harvic Black Shirt** creates a razor-sharp, sophisticated monochromatic look that is perfect for presentations or evening client dinners.
+### 2. Theory End of Season Sale: Premium Office Separates & Rich Knitwear
+* **Sale Details**: Major markdowns on premium merino wool sweaters, silk-blend shirts, and precision-fit blazers.
+* **Link**: [Shop Theory Men's End of Season Sale](https://www.theory.com/men/sale/)
+* **Styling Insight**: 
+  * **Sizing & Silhouette**: Since you wear a size **M/L in tops**, look for Theory's signature slim-fit knitwear in these sizes. Their merino wool crewnecks and quarter-zips offer a modern, tailored silhouette that fits the "Quiet Luxury" aesthetic of your J.Crew Quilted Slate Pullover, but in a much more professional fabric.
+  * **Color & Coordination**: Filter by their deep forest greens (emerald), rich burgundy (ruby), and dark espresso. A burgundy Theory sweater layered over your *Thomas Stone White Shirt* or your *Galaxy Light Blue Shirt* creates a striking, high-contrast color block that perfectly matches your preferred jewel-tone palette.
+
+---
+
+### 3. J.Crew Men's Sale: Structured Blazers & Suiting Separates
+* **Sale Details**: Deep discounts on tailored blazers, Kenmare-fit trousers, and classic office shirts.
+* **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
+* **Styling Insight**:
+  * **Elevating Your Existing Pieces**: You have some excellent "base" layers in your closet, like the *Alfani Purple Slim Fit Shirt* and the *Habit Blue and White Checked Shirt*. What you need is a structured outer layer to transition these from casual to executive-level.
+  * **The Perfect Match**: Search for a J.Crew Ludlow or Kenmare blazer in unstructured Italian wool or corduroy in a warm earth tone (like camel or rich chestnut). Wearing a warm, earth-toned blazer over your purple Alfani shirt creates an incredibly sophisticated, high-contrast jewel-meets-earth color combination that is guaranteed to stand out in the office.
