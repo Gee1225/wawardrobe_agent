@@ -11,9 +11,20 @@ from zoneinfo import ZoneInfo
 # Make WORKSPACE_DIR dynamic to support running locally and in GitHub Actions
 WORKSPACE_DIR = os.environ.get("WORKSPACE_DIR") or os.path.dirname(os.path.abspath(__file__))
 JOBS_FILE = os.path.join(WORKSPACE_DIR, "jobs.json")
-OPENCLAW_FILE = os.path.join(WORKSPACE_DIR, "openclaw.json")
 STATE_FILE = os.path.join(WORKSPACE_DIR, "scheduler_state.json")
-AUTH_PROFILES_FILE = os.path.join(WORKSPACE_DIR, "auth-profiles.json")
+
+# For credentials, search current workspace first, then fall back to parent directory if running locally
+def find_config_file(filename):
+    path = os.path.join(WORKSPACE_DIR, filename)
+    if os.path.exists(path):
+        return path
+    parent_path = os.path.join(os.path.dirname(WORKSPACE_DIR), filename)
+    if os.path.exists(parent_path):
+        return parent_path
+    return path # default fallback
+
+OPENCLAW_FILE = find_config_file("openclaw.json")
+AUTH_PROFILES_FILE = find_config_file("auth-profiles.json")
 
 def get_telegram_token():
     # 1. Check environment variable first
@@ -390,6 +401,14 @@ def main():
         return
     
     if not tg_token and (not wa_creds or not wa_creds.get("enabled")):
+        print("--- SCHEDULER DIAGNOSTIC INFO ---")
+        print(f"WORKSPACE_DIR: {WORKSPACE_DIR}")
+        print(f"JOBS_FILE exists: {os.path.exists(JOBS_FILE)}")
+        print(f"TELEGRAM_BOT_TOKEN env var set: {bool(os.environ.get('TELEGRAM_BOT_TOKEN'))}")
+        print(f"GEMINI_API_KEY env var set: {bool(os.environ.get('GEMINI_API_KEY'))}")
+        print(f"openclaw.json found at: {OPENCLAW_FILE} (exists: {os.path.exists(OPENCLAW_FILE)})")
+        print(f"auth-profiles.json found at: {AUTH_PROFILES_FILE} (exists: {os.path.exists(AUTH_PROFILES_FILE)})")
+        print("---------------------------------")
         print("No notification channels (Telegram or WhatsApp) configured/enabled. Exiting.")
         return
 
