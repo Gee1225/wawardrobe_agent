@@ -45,7 +45,7 @@
       "updatedAtMs": 1784855557589,
       "schedule": {
         "kind": "cron",
-        "expr": "0 20 * * 0-4",
+        "expr": "0 20 * * 4",
         "tz": "America/Chicago"
       },
       "sessionTarget": "isolated",

@@ -5,6 +5,7 @@ import urllib.parse
 import urllib.error
 import re
 import sys
+import random
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -159,7 +160,7 @@ def ddg_search(query):
     except Exception as e:
         return f"Error searching DuckDuckGo: {e}"
 
-def call_gemini(api_key, prompt, model="gemini-3.5-flash"):
+def call_gemini(api_key, prompt, model="gemini-flash-latest"):
     if not api_key:
         print("Error: Gemini API Key is missing. Cannot invoke model.")
         return None
@@ -175,7 +176,7 @@ def call_gemini(api_key, prompt, model="gemini-3.5-flash"):
         method="POST"
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as response:
+        with urllib.request.urlopen(req, timeout=90) as response:
             res = json.loads(response.read().decode("utf-8"))
             return res['candidates'][0]['content']['parts'][0]['text']
     except urllib.error.HTTPError as e:
@@ -210,7 +211,7 @@ User Wardrobe Profile:
 - Preferred Brands: J.Crew, Banana Republic, Theory, Suitsupply.
 
 User Closet Inventory (for matching and context):
-{closet_data[:8000]}
+{closet_data}
 
 Search Grounding Context from DuckDuckGo:
 {search_results}
@@ -239,6 +240,119 @@ Do not include any wrapper or backticks (like ```markdown). Just output the raw 
         print("Failed to get deals from Gemini.")
     return False
 
+def draw_ootd_card(weather_str, top, bottom, belt, output_path):
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        print("Pillow not available. Skipping image generation.")
+        return False
+
+    try:
+        # Create a 800x800 image with a rich dark background
+        img = Image.new("RGB", (800, 800), "#121216")
+        draw = ImageDraw.Draw(img)
+        
+        # Draw a gold accent top border
+        draw.rectangle([0, 0, 800, 12], fill="#D4AF37")
+        
+        # Helper to load system font
+        def get_font(size):
+            font_paths = [
+                "/System/Library/Fonts/Supplemental/Arial.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+                "Arial.ttf"
+            ]
+            for path in font_paths:
+                if os.path.exists(path):
+                    try:
+                        return ImageFont.truetype(path, size)
+                    except Exception:
+                        pass
+            return ImageFont.load_default()
+
+        # Title (clean plain text, no emojis to prevent missing glyphs)
+        font_title = get_font(36)
+        draw.text((50, 50), "DAILY STYLE CHECK", fill="#D4AF37", font=font_title)
+        
+        # Subtitle
+        font_sub = get_font(20)
+        draw.text((50, 100), "Styled by Gee", fill="#8E8E93", font=font_sub)
+        
+        # Weather Box
+        draw.rounded_rectangle([50, 150, 750, 240], radius=15, fill="#1C1C24", outline="#2C2C35", width=2)
+        font_weather = get_font(22)
+        # Clean weather string of emojis for drawing
+        clean_weather = weather_str.replace("🌤️", "").replace("☀️", "").replace("🌧️", "").replace("❄️", "").replace("☁️", "").strip()
+        draw.text((70, 175), f"Weather: {clean_weather}", fill="#FFFFFF", font=font_weather)
+        
+        # Outfit Section Title
+        font_section = get_font(28)
+        draw.text((50, 280), "TODAY'S OOTD", fill="#FFFFFF", font=font_section)
+        
+        # Outfit Items
+        font_item_label = get_font(20)
+        font_item_name = get_font(24)
+        
+        y_offset = 340
+        items = [
+            ("TOP", top.get("name", "Unknown Top"), top.get("brand", "Unknown Brand"), top.get("color", "Unknown")),
+            ("BOTTOM", bottom.get("name", "Unknown Bottom"), bottom.get("brand", "Unknown Brand"), bottom.get("color", "Unknown")),
+            ("ACCESSORY", belt.get("name", "Unknown Accessory"), belt.get("brand", "Unknown Brand"), belt.get("color", "Unknown"))
+        ]
+        
+        # Color mapping for swatches
+        color_map = {
+            "navy": "#1B2A4A",
+            "taupe": "#B5A695",
+            "cognac": "#9E5624",
+            "brown": "#5C3A21",
+            "black": "#111111",
+            "white": "#F5F5F5",
+            "pink": "#F0C0C0",
+            "green": "#2C5E43",
+            "blue": "#2F5C8F",
+            "gray": "#8C8C8C",
+            "grey": "#8C8C8C",
+            "stone": "#D4D1C9",
+            "lemon": "#EBE3A3",
+            "lilac": "#C8A2C8",
+            "purple": "#5D2E8C",
+            "teal": "#008080",
+            "beige": "#F5F5DC",
+            "red": "#A32B2B",
+            "orange": "#E67E22",
+            "yellow": "#F1C40F"
+        }
+        
+        for label, name, brand, color in items:
+            # Draw item card
+            draw.rounded_rectangle([50, y_offset, 750, y_offset + 100], radius=12, fill="#1C1C24")
+            
+            # Find matching swatch color
+            color_lower = color.lower()
+            hex_color = "#8E8E93" # default grey
+            for key, val in color_map.items():
+                if key in color_lower:
+                    hex_color = val
+                    break
+                    
+            draw.ellipse([70, y_offset + 25, 120, y_offset + 75], fill=hex_color, outline="#3A3A45", width=2)
+            
+            # Text details
+            draw.text((150, y_offset + 15), label, fill="#D4AF37", font=font_item_label)
+            draw.text((150, y_offset + 40), f"{brand} - {name}", fill="#FFFFFF", font=font_item_name)
+            draw.text((150, y_offset + 68), f"Color: {color}", fill="#8E8E93", font=font_item_label)
+            
+            y_offset += 120
+
+        # Save image
+        img.save(output_path, "PNG")
+        return True
+    except Exception as e:
+        print(f"Error rendering OOTD card: {e}")
+        return False
+
 def execute_style_check(api_key, tg_token, wa_creds, job):
     print("Running Daily Style Check...")
     
@@ -262,17 +376,29 @@ def execute_style_check(api_key, tg_token, wa_creds, job):
         except Exception as e:
             print(f"Error reading closet.json: {e}")
             
-    deals_data = "No recent deals found."
-    deals_path = os.path.join(WORKSPACE_DIR, "latest_clothing_deals.md")
-    if os.path.exists(deals_path):
-        try:
-            with open(deals_path, 'r') as f:
-                deals_data = f.read()
-        except Exception as e:
-            print(f"Error reading latest_clothing_deals.md: {e}")
-            
+    # Check if today is Friday in America/Chicago timezone
+    is_friday = datetime.now(ZoneInfo("America/Chicago")).weekday() == 4
+    
+    deals_data = None
+    if is_friday:
+        deals_path = os.path.join(WORKSPACE_DIR, "latest_clothing_deals.md")
+        if os.path.exists(deals_path):
+            try:
+                with open(deals_path, 'r') as f:
+                    deals_data = f.read()
+            except Exception as e:
+                print(f"Error reading latest_clothing_deals.md: {e}")
+                
+    deals_section_prompt = ""
+    deals_format_prompt = ""
+    if is_friday and deals_data:
+        deals_section_prompt = f"\nYesterday's Deals:\n{deals_data}\n"
+        deals_format_prompt = "\n🛍️ **Deals**: [Summary of the deals from yesterday's deals file]"
+    else:
+        deals_format_prompt = "\n🛍️ **Deals**: No deals today (deals are sent on Fridays)"
+
     prompt = f"""You are the Daily Style Check Agent, a personal wardrobe stylist.
-Your task is to recommend a great outfit combination (OOTD) for the user today based on the weather, their wardrobe inventory, and yesterday's deals.
+Your task is to recommend a great outfit combination (OOTD) for the user today based on the weather and their wardrobe inventory.{deals_section_prompt}
 
 Current Weather:
 {weather_str}
@@ -282,27 +408,119 @@ User Wardrobe Profile:
 - Color Palette: Favor rich jewel tones (emerald, sapphire, ruby), high contrast, warm earth tones.
 
 Wardrobe Inventory (closet.json):
-{closet_data[:8000]}
-
-Yesterday's Deals:
-{deals_data}
+{closet_data}
 
 Please recommend a complete outfit combination from the user's wardrobe inventory (items that are actually in closet.json) that is suitable for today's weather.
 Explain your styling choice and why it works for the weather.
 
 Format your output exactly as follows for Telegram/WhatsApp delivery:
 🌤️ **Weather**: {weather_str}
-👔 **OOTD**: [Outfit description with item names/brands]
-🛍️ **Deals**: [Summary of the deals from yesterday's deals file]
+👔 **OOTD**: [Outfit description with item names/brands]{deals_format_prompt}
+
+Additionally, you MUST output the following two blocks at the very end of your response:
+
+1. A raw JSON block inside a block tagged with [JSON_START] and [JSON_END], listing the OOTD items chosen:
+[JSON_START]
+{{
+  "top": {{"brand": "Brand", "name": "Item Name", "color": "Color"}},
+  "bottom": {{"brand": "Brand", "name": "Item Name", "color": "Color"}},
+  "belt": {{"brand": "Brand", "name": "Item Name", "color": "Color"}}
+}}
+[JSON_END]
+
+2. An image generation prompt inside a block tagged with [IMAGE_PROMPT_START] and [IMAGE_PROMPT_END].
+The prompt MUST describe the exact clothing items recommended above, but simplified so a text-to-image AI model can render them accurately.
+CRITICAL: Do NOT include brand names, collection names, trademark symbols (like ®), or model numbers. Instead, use only simple, descriptive color and garment words (e.g., "a teal short-sleeve polo shirt", "stone-colored chino pants", "a cognac brown leather belt").
+The prompt must look exactly like this format:
+[IMAGE_PROMPT_START]
+A photorealistic, high-quality, professional full-body portrait of a darkskinned black man wearing: [simplified top description with color], [simplified pants/bottoms description with color], and [simplified belt/accessory description with color]. Standing in a modern minimalist office with soft lighting.
+[IMAGE_PROMPT_END]
 """
     
     result = call_gemini(api_key, prompt)
     if result:
-        print("Generated OOTD recommendation. Sending notification...")
-        if tg_token:
-            chat_id = job.get("delivery", {}).get("to", "8510312060")
-            send_telegram(tg_token, chat_id, result)
-            print("Telegram notification sent.")
+        print("Generated OOTD recommendation. Parsing structured details...")
+        
+        # Parse the image prompt payload
+        image_prompt = None
+        match_prompt = re.search(r'\[IMAGE_PROMPT_START\](.*?)\[IMAGE_PROMPT_END\]', result, re.DOTALL)
+        if match_prompt:
+            image_prompt = match_prompt.group(1).strip()
+            result = result.replace(match_prompt.group(0), "").strip()
+
+        # Parse the JSON payload out of the response text
+        ootd_json = None
+        match_json = re.search(r'\[JSON_START\](.*?)\[JSON_END\]', result, re.DOTALL)
+        if match_json:
+            try:
+                ootd_json = json.loads(match_json.group(1).strip())
+                result = result.replace(match_json.group(0), "").strip()
+            except Exception as e:
+                print(f"Error parsing OOTD JSON block: {e}")
+
+        # Attempt to draw or generate OOTD photo
+        image_path = os.path.join(WORKSPACE_DIR, "ootd.png")
+        image_generated = False
+        
+        if image_prompt:
+            print(f"Generating OOTD photo using Pollinations AI: {image_prompt}")
+            try:
+                full_prompt = f"{image_prompt}, photorealistic, professional photography, high quality"
+                # Use a random seed to force generating a fresh new image variation
+                seed = random.randint(1, 1000000)
+                url = f"https://image.pollinations.ai/prompt/{urllib.parse.quote(full_prompt)}?seed={seed}"
+                req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req, timeout=30) as response:
+                    img_data = response.read()
+                    if img_data:
+                        with open(image_path, 'wb') as f:
+                            f.write(img_data)
+                        print("Successfully generated OOTD photo.")
+                        image_generated = True
+            except Exception as e:
+                print(f"Failed to generate AI OOTD photo: {e}")
+
+        # Fallback to Pillow card drawing if AI photo generation failed
+        if not image_generated and ootd_json:
+            print("Falling back to Pillow OOTD card card...")
+            image_generated = draw_ootd_card(weather_str, ootd_json.get("top", {}), ootd_json.get("bottom", {}), ootd_json.get("belt", {}), image_path)
+
+        # Send photo to Telegram
+        image_sent = False
+        if image_generated:
+            try:
+                import requests
+                if tg_token:
+                    chat_id = job.get("delivery", {}).get("to", "8510312060")
+                    # 1. Send the OOTD image card first with a short, clean caption
+                    url_photo = f"https://api.telegram.org/bot{tg_token}/sendPhoto"
+                    clean_weather = weather_str.replace("🌤️", "").replace("☀️", "").replace("🌧️", "").replace("❄️", "").replace("☁️", "").strip()
+                    short_caption = f"Style Check for today! ({clean_weather})"
+                    
+                    with open(image_path, "rb") as f:
+                        files = {"photo": f}
+                        data = {"chat_id": chat_id, "caption": short_caption}
+                        response = requests.post(url_photo, files=files, data=data, timeout=30)
+                        if response.status_code == 200:
+                            print("Telegram photo sent successfully.")
+                            image_sent = True
+                        else:
+                            print(f"Failed to send Telegram photo: {response.text}")
+                    
+                    # 2. Send the detailed text recommendation as a follow-up
+                    if image_sent:
+                        send_telegram(tg_token, chat_id, result)
+                        print("Telegram OOTD details sent as follow-up.")
+            except Exception as e:
+                print(f"Error sending Telegram photo: {e}")
+
+        # Fall back to text if image generation/sending failed
+        if not image_sent:
+            if tg_token:
+                chat_id = job.get("delivery", {}).get("to", "8510312060")
+                send_telegram(tg_token, chat_id, result)
+                print("Telegram text notification sent.")
+
         if wa_creds and wa_creds.get("enabled"):
             wa_token = wa_creds.get("token")
             wa_phone_id = wa_creds.get("phone_number_id")

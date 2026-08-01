@@ -4,4 +4,6 @@ auth-profiles.json
 __pycache__/
 .DS_Store
 scratch/
-test_*.py
+*.png
+Raw Emails/
+

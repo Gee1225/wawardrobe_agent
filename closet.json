@@ -1035,28 +1035,30 @@
     }
   },
   {
-    "id": "jab-traveler-polo-teal",
+    "id": "jab-jab6mfylrg68-large",
     "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
     "brand": "Jos. A. Bank",
     "color": "Teal",
     "category": "Top",
     "sub_category": "Polo",
-    "size": "Large (Tailored Fit)",
+    "size": "Large",
+    "quantity": 1,
     "warmth": "Light",
     "style_tags": [
       "Tailored Fit",
       "Performance",
       "Short Sleeve",
       "Polo",
-      "Casual"
+      "Traveler Collection",
+      "Clearance"
     ],
     "weather_compatibility": {
       "min_temp": 65,
-      "max_temp": 90,
+      "max_temp": 95,
       "conditions": [
         "Sunny",
         "Warm",
-        "Hot"
+        "Humid"
       ]
     }
   },
@@ -1350,6 +1352,468 @@
       "max_temp": 75,
       "conditions": [
         "Any"
+      ]
+    }
+  },
+  {
+    "id": "bb-the-buckley-belt-black",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Black",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "Adjustable",
+    "quantity": 1,
+    "warmth": "None",
+    "style_tags": [
+      "Leather",
+      "Belt",
+      "Automatic",
+      "Ratchet"
+    ],
+    "weather_compatibility": {
+      "min_temp": 0,
+      "max_temp": 100,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "bb-the-buckley-belt-cognac",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Cognac",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "Adjustable",
+    "quantity": 1,
+    "warmth": "None",
+    "style_tags": [
+      "Leather",
+      "Belt",
+      "Automatic",
+      "Ratchet"
+    ],
+    "weather_compatibility": {
+      "min_temp": 0,
+      "max_temp": 100,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "bb-the-buckley-belt-brown",
+    "name": "The Buckley Belt",
+    "brand": "Buckley Belts",
+    "color": "Brown",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "size": "Adjustable",
+    "quantity": 1,
+    "warmth": "None",
+    "style_tags": [
+      "Leather",
+      "Belt",
+      "Automatic",
+      "Ratchet"
+    ],
+    "weather_compatibility": {
+      "min_temp": 0,
+      "max_temp": 100,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-jeh0003lpk-medium",
+    "name": "Performance Stretch Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Light Pink & White",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "Medium",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Performance",
+      "Stretch",
+      "Shirt"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0291nav-34-32",
+    "name": "Classic Fit Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Navy",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L (Classic fit)",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Classic Fit",
+      "Casual",
+      "Stretch",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 75,
+      "conditions": [
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-scs0115pnk175s-17-35",
+    "name": "SF White & Red Non-Iron Stretch Print Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "17 Collar 35 Sleeve Button Cuff",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Stretch",
+      "Print",
+      "Button Cuff"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 90,
+      "conditions": [
+        "Any",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "ct-fon2665pnk16h5s-16.5-35",
+    "name": "SF Pink Non-Iron Twill Puppytooth Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 Collar 35 Sleeve Button Cuff",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Twill",
+      "Puppytooth",
+      "Button Cuff"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 90,
+      "conditions": [
+        "Any",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "ct-foa0015llc16h6s-16.5-36",
+    "name": "SF Lilac Non-Iron Stretch Greenwich Weave Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lilac Purple",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 Collar 36 Sleeve Button Cuff",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Stretch",
+      "Greenwich Weave",
+      "Button Cuff"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 90,
+      "conditions": [
+        "Any",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0279tpe-34w-34l",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Taupe",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 34L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 75,
+      "conditions": [
+        "Sunny",
+        "Overcast",
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0270stn-32w-34l",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Stone",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "32W 34L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 75,
+      "conditions": [
+        "Sunny",
+        "Overcast",
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0270blk-32w-34l",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Black",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "32W 34L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 75,
+      "conditions": [
+        "Sunny",
+        "Overcast",
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0274lgy-34-32",
+    "name": "Ultimate Non-Iron Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Light Gray",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Ultimate",
+      "Non-Iron",
+      "Chinos"
+    ],
+    "weather_compatibility": {
+      "min_temp": 45,
+      "max_temp": 80,
+      "conditions": [
+        "Dry",
+        "Mild",
+        "Any"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0290afb-34-32",
+    "name": "Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Airforce Blue",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Casual",
+      "Stretch",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Overcast",
+        "Dry"
+      ]
+    }
+  },
+  {
+    "id": "ct-trc0296tpe-34-32",
+    "name": "Casual Stretch Chinos",
+    "brand": "Charles Tyrwhitt",
+    "color": "Taupe",
+    "category": "Bottom",
+    "sub_category": "Chinos",
+    "size": "34W 32L",
+    "quantity": 1,
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Slim Fit",
+      "Casual",
+      "Stretch",
+      "Chino"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Sunny",
+        "Overcast",
+        "Dry"
+      ]
+    }
+  },
+  {
+    "id": "jab-jab5bej6h534-16_5x34_35",
+    "name": "Traveler\u00ae Collection Slim Fit Spread Collar Dress Shirt",
+    "brand": "Jos. A. Bank",
+    "color": "Light Orange",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16 1/2 X 34/35",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Spread Collar",
+      "Dress Shirt",
+      "Traveler Collection"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 80,
+      "conditions": [
+        "Any",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "ct-scs0115pnk-17-35",
+    "name": "Slim Fit White & Red Non-Iron Stretch Print Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "White & Red",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "17 Collar 35 Sleeve",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Stretch",
+      "Print",
+      "Button Cuff",
+      "Dress Shirt"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any",
+        "Sunny",
+        "Cloudy"
+      ]
+    }
+  },
+  {
+    "id": "ct-fon2665pnk-16.5-35",
+    "name": "Slim Fit Pink Non-Iron Twill Puppytooth Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Pink",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16.5 Collar 35 Sleeve",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Twill",
+      "Puppytooth",
+      "Button Cuff",
+      "Dress Shirt"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any",
+        "Sunny",
+        "Cloudy"
+      ]
+    }
+  },
+  {
+    "id": "ct-foa0015llc-16.5-36",
+    "name": "Slim Fit Lilac Non-Iron Stretch Greenwich Weave Shirt",
+    "brand": "Charles Tyrwhitt",
+    "color": "Lilac",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16.5 Collar 36 Sleeve",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Slim Fit",
+      "Non-Iron",
+      "Stretch",
+      "Greenwich Weave",
+      "Button Cuff",
+      "Dress Shirt"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any",
+        "Sunny",
+        "Cloudy"
       ]
     }
   }
