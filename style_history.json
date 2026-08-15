@@ -1,28 +1,5 @@
 [
   {
-    "date": "2026-08-15",
-    "ootd": {
-      "top": {
-        "id": "jab-jab6mfylrg68-large",
-        "brand": "Jos. A. Bank",
-        "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
-        "color": "Teal"
-      },
-      "bottom": {
-        "id": "ct-trc0270stn-32w-34l",
-        "brand": "Charles Tyrwhitt",
-        "name": "Ultimate Non-Iron Chinos",
-        "color": "Stone"
-      },
-      "belt": {
-        "id": "bb-the-buckley-belt-cognac",
-        "brand": "Buckley Belts",
-        "name": "The Buckley Belt",
-        "color": "Cognac"
-      }
-    }
-  },
-  {
     "date": "2026-08-16",
     "ootd": {
       "top": {
@@ -42,6 +19,29 @@
         "brand": "Buckley Belts",
         "name": "The Buckley Belt",
         "color": "Brown"
+      }
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "ootd": {
+      "top": {
+        "id": "ct-csp0007wht",
+        "brand": "Charles Tyrwhitt",
+        "name": "Short Sleeve Non-Iron Poplin Ice Cream Print Shirt",
+        "color": "White"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
       }
     }
   }

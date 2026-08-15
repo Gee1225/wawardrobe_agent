@@ -54,6 +54,40 @@ def send_telegram(token, chat_id, text):
         print(f"Error sending Telegram message to {chat_id}: {e}")
         return None
 
+def send_telegram_photo(token, chat_id, photo_path, caption=None):
+    if not token or not chat_id or not os.path.exists(photo_path):
+        return None
+    url = f"https://api.telegram.org/bot{token}/sendPhoto"
+    boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
+    body = bytearray()
+    
+    body.extend(f"--{boundary}\r\n".encode("utf-8"))
+    body.extend(f'Content-Disposition: form-data; name="chat_id"\r\n\r\n{chat_id}\r\n'.encode("utf-8"))
+    
+    if caption:
+        body.extend(f"--{boundary}\r\n".encode("utf-8"))
+        body.extend(f'Content-Disposition: form-data; name="caption"\r\n\r\n{caption}\r\n'.encode("utf-8"))
+        
+    filename = os.path.basename(photo_path)
+    body.extend(f"--{boundary}\r\n".encode("utf-8"))
+    body.extend(f'Content-Disposition: form-data; name="photo"; filename="{filename}"\r\n'.encode("utf-8"))
+    body.extend(b'Content-Type: image/png\r\n\r\n')
+    
+    try:
+        with open(photo_path, "rb") as f:
+            body.extend(f.read())
+        body.extend(b"\r\n")
+        body.extend(f"--{boundary}--\r\n".encode("utf-8"))
+        
+        headers = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
+        req = urllib.request.Request(url, data=bytes(body), headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=30) as response:
+            res = response.read().decode("utf-8")
+            return json.loads(res)
+    except Exception as e:
+        print(f"Error sending Telegram photo via urllib: {e}")
+        return None
+
 def get_whatsapp_credentials():
     # 1. Check environment variables first
     enabled = os.environ.get("WHATSAPP_ENABLED", "").lower() == "true"
@@ -113,6 +147,73 @@ def send_whatsapp(token, phone_number_id, to, text):
             return json.loads(res)
     except Exception as e:
         print(f"Error sending WhatsApp message to {to}: {e}")
+        return None
+
+def upload_whatsapp_media(token, phone_number_id, file_path):
+    if not token or not phone_number_id or not os.path.exists(file_path):
+        return None
+    url = f"https://graph.facebook.com/v19.0/{phone_number_id}/media"
+    boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
+    body = bytearray()
+    
+    body.extend(f"--{boundary}\r\n".encode("utf-8"))
+    body.extend(b'Content-Disposition: form-data; name="messaging_product"\r\n\r\nwhatsapp\r\n')
+    
+    body.extend(f"--{boundary}\r\n".encode("utf-8"))
+    body.extend(b'Content-Disposition: form-data; name="type"\r\n\r\nimage/png\r\n')
+    
+    filename = os.path.basename(file_path)
+    body.extend(f"--{boundary}\r\n".encode("utf-8"))
+    body.extend(f'Content-Disposition: form-data; name="file"; filename="{filename}"\r\n'.encode("utf-8"))
+    body.extend(b'Content-Type: image/png\r\n\r\n')
+    
+    try:
+        with open(file_path, "rb") as f:
+            body.extend(f.read())
+        body.extend(b"\r\n")
+        body.extend(f"--{boundary}--\r\n".encode("utf-8"))
+        
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Content-Type": f"multipart/form-data; boundary={boundary}"
+        }
+        req = urllib.request.Request(url, data=bytes(body), headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=30) as response:
+            res = json.loads(response.read().decode("utf-8"))
+            return res.get("id")
+    except Exception as e:
+        print(f"Error uploading WhatsApp media: {e}")
+        return None
+
+def send_whatsapp_image(token, phone_number_id, to, media_id, caption=None):
+    url = f"https://graph.facebook.com/v19.0/{phone_number_id}/messages"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+    image_payload = {"id": media_id}
+    if caption:
+        image_payload["caption"] = caption
+        
+    payload = {
+        "messaging_product": "whatsapp",
+        "recipient_type": "individual",
+        "to": to,
+        "type": "image",
+        "image": image_payload
+    }
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=headers,
+        method="POST"
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            res = response.read().decode("utf-8")
+            return json.loads(res)
+    except Exception as e:
+        print(f"Error sending WhatsApp image to {to}: {e}")
         return None
 
 def get_google_api_key():
@@ -742,50 +843,47 @@ A photorealistic, high-quality, professional full-body portrait of a darkskinned
             print("Falling back to Pillow OOTD card card...")
             image_generated = draw_ootd_card(weather_str, ootd_json.get("top", {}), ootd_json.get("bottom", {}), ootd_json.get("belt", {}), image_path)
 
-        # Send photo to Telegram
-        image_sent = False
-        if image_generated:
-            try:
-                import requests
-                if tg_token:
-                    chat_id = job.get("delivery", {}).get("to", "8510312060")
-                    # 1. Send the OOTD image card first with a short, clean caption
-                    url_photo = f"https://api.telegram.org/bot{tg_token}/sendPhoto"
-                    clean_weather = weather_str.replace("🌤️", "").replace("☀️", "").replace("🌧️", "").replace("❄️", "").replace("☁️", "").strip()
-                    short_caption = f"Style Check for today! ({clean_weather})"
-                    
-                    with open(image_path, "rb") as f:
-                        files = {"photo": f}
-                        data = {"chat_id": chat_id, "caption": short_caption}
-                        response = requests.post(url_photo, files=files, data=data, timeout=30)
-                        if response.status_code == 200:
-                            print("Telegram photo sent successfully.")
-                            image_sent = True
-                        else:
-                            print(f"Failed to send Telegram photo: {response.text}")
-                    
-                    # 2. Send the detailed text recommendation as a follow-up
-                    if image_sent:
-                        send_telegram(tg_token, chat_id, result)
-                        print("Telegram OOTD details sent as follow-up.")
-            except Exception as e:
-                print(f"Error sending Telegram photo: {e}")
-
-        # Fall back to text if image generation/sending failed
-        if not image_sent:
-            if tg_token:
-                chat_id = job.get("delivery", {}).get("to", "8510312060")
+        # Send photo & text to Telegram
+        image_sent_tg = False
+        if tg_token:
+            chat_id = job.get("delivery", {}).get("to", "8510312060")
+            clean_weather = weather_str.replace("🌤️", "").replace("☀️", "").replace("🌧️", "").replace("❄️", "").replace("☁️", "").strip()
+            short_caption = f"Style Check for today! ({clean_weather})"
+            
+            if image_generated:
+                res_photo = send_telegram_photo(tg_token, chat_id, image_path, short_caption)
+                if res_photo and res_photo.get("ok"):
+                    print("Telegram photo sent successfully.")
+                    image_sent_tg = True
+                    send_telegram(tg_token, chat_id, result)
+                    print("Telegram OOTD details sent as follow-up.")
+                else:
+                    print(f"Failed to send Telegram photo: {res_photo}")
+            
+            if not image_sent_tg:
                 send_telegram(tg_token, chat_id, result)
                 print("Telegram text notification sent.")
 
+        # Send photo & text to WhatsApp
         if wa_creds and wa_creds.get("enabled"):
             wa_token = wa_creds.get("token")
             wa_phone_id = wa_creds.get("phone_number_id")
             wa_to = job.get("delivery", {}).get("to") or wa_creds.get("to")
             if wa_token and wa_phone_id and wa_to:
                 wa_to_clean = "".join(c for c in wa_to if c.isdigit())
-                send_whatsapp(wa_token, wa_phone_id, wa_to_clean, result)
-                print("WhatsApp notification sent.")
+                wa_image_sent = False
+                if image_generated:
+                    media_id = upload_whatsapp_media(wa_token, wa_phone_id, image_path)
+                    if media_id:
+                        res_wa_img = send_whatsapp_image(wa_token, wa_phone_id, wa_to_clean, media_id, short_caption)
+                        if res_wa_img and "messages" in res_wa_img:
+                            print("WhatsApp photo sent successfully.")
+                            wa_image_sent = True
+                            send_whatsapp(wa_token, wa_phone_id, wa_to_clean, result)
+                            print("WhatsApp OOTD details sent as follow-up.")
+                if not wa_image_sent:
+                    send_whatsapp(wa_token, wa_phone_id, wa_to_clean, result)
+                    print("WhatsApp text notification sent.")
         return True
     else:
         print("Failed to get styling recommendation from Gemini.")
