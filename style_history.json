@@ -26,22 +26,22 @@
     "date": "2026-08-15",
     "ootd": {
       "top": {
-        "id": "ct-csp0007wht",
-        "brand": "Charles Tyrwhitt",
-        "name": "Short Sleeve Non-Iron Poplin Ice Cream Print Shirt",
-        "color": "White"
+        "id": "jab-jab6mfylrg68-large",
+        "brand": "Jos. A. Bank",
+        "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
+        "color": "Teal"
       },
       "bottom": {
-        "id": "ct-trc0291nav-34-32",
+        "id": "ct-trc0270stn-32w-34l",
         "brand": "Charles Tyrwhitt",
-        "name": "Classic Fit Casual Stretch Chinos",
-        "color": "Navy"
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
       },
       "belt": {
-        "id": "buckley-belt-black",
+        "id": "buckley-belt-cognac",
         "brand": "Buckley Belts",
         "name": "The Buckley Belt",
-        "color": "Black"
+        "color": "Cognac"
       }
     }
   }
