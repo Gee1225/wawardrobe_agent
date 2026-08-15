@@ -4,7 +4,13 @@ on:
   schedule:
     # Run every 30 minutes
     - cron: '*/30 * * * *'
-  workflow_dispatch: # Allows manual trigger from the GitHub UI
+  workflow_dispatch:
+    inputs:
+      force_style_check:
+        description: 'Force run Daily Style Check immediately'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   run-scheduler:
@@ -32,7 +38,12 @@ jobs:
           WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
           WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
           WHATSAPP_TO: ${{ secrets.WHATSAPP_TO }}
-        run: python scheduler.py
+        run: |
+          if [ "${{ inputs.force_style_check }}" = "true" ]; then
+            python scheduler.py --run-style-check
+          else
+            python scheduler.py
+          fi
 
       - name: Commit Run State and Deals
         run: |
