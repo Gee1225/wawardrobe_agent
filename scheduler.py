@@ -160,7 +160,7 @@ def ddg_search(query):
     except Exception as e:
         return f"Error searching DuckDuckGo: {e}"
 
-def call_gemini(api_key, prompt, model="gemini-flash-latest"):
+def call_gemini(api_key, prompt, model="gemini-3.5-flash"):
     if not api_key:
         print("Error: Gemini API Key is missing. Cannot invoke model.")
         return None
@@ -184,6 +184,103 @@ def call_gemini(api_key, prompt, model="gemini-flash-latest"):
     except Exception as e:
         print(f"Gemini API Connection Error: {e}")
     return None
+
+HISTORY_FILE = os.path.join(WORKSPACE_DIR, "style_history.json")
+
+def load_style_history():
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error reading style_history.json: {e}")
+    return []
+
+def save_style_history(history):
+    try:
+        # Keep only the last 100 entries to prevent the file from growing indefinitely
+        history_to_save = history[-100:]
+        with open(HISTORY_FILE, 'w') as f:
+            json.dump(history_to_save, f, indent=2)
+        print(f"Saved style history to {HISTORY_FILE}")
+        return True
+    except Exception as e:
+        print(f"Error saving style history: {e}")
+        return False
+
+def find_item_in_closet(item_desc, closet_items):
+    if not item_desc:
+        return None
+    # 1. Match by ID
+    item_id = item_desc.get("id")
+    if item_id:
+        for item in closet_items:
+            if item.get("id") == item_id:
+                return item
+    
+    # 2. Fallback: match by brand/name/color
+    brand_desc = str(item_desc.get("brand", "")).strip().lower()
+    name_desc = str(item_desc.get("name", "")).strip().lower()
+    color_desc = str(item_desc.get("color", "")).strip().lower()
+    
+    best_match = None
+    best_score = 0
+    for item in closet_items:
+        item_brand = str(item.get("brand", "")).strip().lower()
+        item_name = str(item.get("name", "")).strip().lower()
+        item_color = str(item.get("color", "")).strip().lower()
+        
+        score = 0
+        if brand_desc and brand_desc in item_brand:
+            score += 1
+        # Check name overlap
+        if name_desc:
+            if name_desc in item_name or item_name in name_desc:
+                score += 2
+            elif any(w in item_name for w in name_desc.split() if len(w) > 3):
+                score += 1
+        if color_desc and (color_desc in item_color or item_color in color_desc):
+            score += 1
+            
+        if score > best_score:
+            best_score = score
+            best_match = item
+            
+    if best_score >= 2: # At least a decent match
+        return best_match
+    return None
+
+def get_broad_weather(weather_str):
+    # Try to parse temperature in Fahrenheit
+    temp_f = None
+    # Check for something like +85°F or 85 °F or 85F
+    temp_match = re.search(r'([+-]?\d+)\s*(?:°F|F)', weather_str)
+    if temp_match:
+        temp_f = int(temp_match.group(1))
+    else:
+        # Check for generic number
+        temp_match = re.search(r'([+-]?\d+)', weather_str)
+        if temp_match:
+            temp_f = int(temp_match.group(1))
+    
+    if temp_f is None:
+        return "Mild", "Treat temperature as comfortable (approx 70°F)."
+        
+    if temp_f >= 80:
+        category = "Hot"
+        advice = "Avoid heavy sweaters, hoodies, or thick outerwear. Prioritize light/breathable fabrics like short sleeves or polos."
+    elif temp_f >= 65:
+        category = "Warm/Mild"
+        advice = "Perfect for standard shirts, polos, light chinos. Layering is optional."
+    elif temp_f >= 50:
+        category = "Cool"
+        advice = "Good for long-sleeves, sweaters, light jackets, or layering."
+    else:
+        category = "Cold"
+        advice = "Prioritize warm sweaters, layering, and outerwear."
+        
+    return f"{category} ({temp_f}°F)", advice
+
 
 def execute_deal_hunter(api_key):
     print("Running Evening Deal Hunter...")
@@ -353,8 +450,11 @@ def draw_ootd_card(weather_str, top, bottom, belt, output_path):
         print(f"Error rendering OOTD card: {e}")
         return False
 
-def execute_style_check(api_key, tg_token, wa_creds, job):
-    print("Running Daily Style Check...")
+def execute_style_check(api_key, tg_token, wa_creds, job, target_date=None):
+    if target_date is None:
+        target_date = datetime.now(ZoneInfo("America/Chicago"))
+        
+    print(f"Running Daily Style Check for target date: {target_date.strftime('%Y-%m-%d')}...")
     
     weather_str = "Unknown weather"
     try:
@@ -367,17 +467,134 @@ def execute_style_check(api_key, tg_token, wa_creds, job):
     except Exception as e:
         print(f"Error fetching weather: {e}")
         
-    closet_data = ""
+    broad_weather, weather_advice = get_broad_weather(weather_str)
+    
+    history = load_style_history()
+    
+    # Analyze history relative to target_date to avoid duplicates
+    worn_ids_7d = set()
+    worn_ids_30d = set()
+    item_stats = {} # id -> {"last_worn_date": str, "days_ago": int, "times_worn": int}
+    
+    for entry in history:
+        entry_date_str = entry.get("date")
+        try:
+            entry_date = datetime.strptime(entry_date_str, "%Y-%m-%d").replace(tzinfo=ZoneInfo("America/Chicago"))
+        except Exception:
+            try:
+                entry_date = datetime.fromisoformat(entry_date_str).astimezone(ZoneInfo("America/Chicago"))
+            except Exception:
+                continue
+                
+        days_diff = (target_date.date() - entry_date.date()).days
+        
+        if days_diff <= 0:
+            continue
+            
+        ootd = entry.get("ootd", {})
+        for slot, item in ootd.items():
+            item_id = item.get("id")
+            if not item_id:
+                continue
+                
+            if days_diff <= 7:
+                worn_ids_7d.add(item_id)
+            if days_diff <= 30:
+                worn_ids_30d.add(item_id)
+                
+            if item_id not in item_stats:
+                item_stats[item_id] = {
+                    "last_worn_date": entry_date_str,
+                    "days_ago": days_diff,
+                    "times_worn": 1
+                }
+            else:
+                item_stats[item_id]["times_worn"] += 1
+                if days_diff < item_stats[item_id]["days_ago"]:
+                    item_stats[item_id]["days_ago"] = days_diff
+                    item_stats[item_id]["last_worn_date"] = entry_date_str
+                    
+    closet_items = []
     closet_path = os.path.join(WORKSPACE_DIR, "closet.json")
     if os.path.exists(closet_path):
         try:
             with open(closet_path, 'r') as f:
-                closet_data = f.read()
+                closet_items = json.load(f)
         except Exception as e:
             print(f"Error reading closet.json: {e}")
             
-    # Check if today is Friday in America/Chicago timezone
-    is_friday = datetime.now(ZoneInfo("America/Chicago")).weekday() == 4
+    # Group closet by categories
+    grouped = {
+        "Top": [],
+        "Bottom": [],
+        "Belt": []
+    }
+    
+    for item in closet_items:
+        cat = item.get("category")
+        sub_cat = item.get("sub_category", "")
+        
+        if cat == "Top":
+            grouped["Top"].append(item)
+        elif cat == "Bottom":
+            grouped["Bottom"].append(item)
+        elif cat == "Accessories" and sub_cat == "Belt":
+            grouped["Belt"].append(item)
+            
+    filtered_closet = []
+    
+    # Exclude 7-day repetitions with safe fallbacks
+    limits = {
+        "Top": 5,
+        "Bottom": 3,
+        "Belt": 2
+    }
+    
+    for cat_name, items in grouped.items():
+        min_rem = limits.get(cat_name, 2)
+        not_worn_7d = [i for i in items if i.get("id") not in worn_ids_7d]
+        
+        if len(not_worn_7d) >= min_rem:
+            selected_items = not_worn_7d
+        else:
+            # Fallback: keep the least recently recommended items
+            def sort_key(item):
+                stats = item_stats.get(item.get("id"))
+                if not stats:
+                    return -999999
+                return -stats["days_ago"]
+                
+            sorted_items = sorted(items, key=sort_key)
+            selected_items = sorted_items[:min_rem]
+            
+        # Add metadata for model reasoning
+        for item in selected_items:
+            item_id = item.get("id")
+            stats = item_stats.get(item_id)
+            item_copy = dict(item)
+            if stats:
+                item_copy["last_recommended"] = f"{stats['days_ago']} days ago"
+                item_copy["times_recommended_last_30_days"] = stats["times_worn"]
+            else:
+                item_copy["last_recommended"] = "never"
+                item_copy["times_recommended_last_30_days"] = 0
+            filtered_closet.append(item_copy)
+            
+    recent_recommendations_str = ""
+    if history:
+        recent_entries = []
+        for entry in history[-10:]:
+            entry_date_str = entry.get("date")
+            ootd = entry.get("ootd", {})
+            t_info = f"{ootd.get('top', {}).get('brand', '')} {ootd.get('top', {}).get('name', '')} ({ootd.get('top', {}).get('color', '')})"
+            b_info = f"{ootd.get('bottom', {}).get('brand', '')} {ootd.get('bottom', {}).get('name', '')} ({ootd.get('bottom', {}).get('color', '')})"
+            belt_info = f"{ootd.get('belt', {}).get('brand', '')} {ootd.get('belt', {}).get('name', '')} ({ootd.get('belt', {}).get('color', '')})"
+            recent_entries.append(f"- {entry_date_str}: Top: {t_info} | Bottom: {b_info} | Belt: {belt_info}")
+        recent_recommendations_str = "\n".join(recent_entries)
+    else:
+        recent_recommendations_str = "None"
+        
+    is_friday = target_date.weekday() == 4
     
     deals_data = None
     if is_friday:
@@ -398,20 +615,30 @@ def execute_style_check(api_key, tg_token, wa_creds, job):
         deals_format_prompt = "\n🛍️ **Deals**: No deals today (deals are sent on Fridays)"
 
     prompt = f"""You are the Daily Style Check Agent, a personal wardrobe stylist.
-Your task is to recommend a great outfit combination (OOTD) for the user today based on the weather and their wardrobe inventory.{deals_section_prompt}
+Your task is to recommend a great outfit combination (OOTD) for the user today based on the weather, their wardrobe inventory, and style history.{deals_section_prompt}
 
 Current Weather:
-{weather_str}
+- Raw weather data: {weather_str}
+- Broad category: {broad_weather}
+- Styling Advice: {weather_advice}
 
 User Wardrobe Profile:
 - Size: Tops L/M, bottoms 32-34W 32-34L.
 - Color Palette: Favor rich jewel tones (emerald, sapphire, ruby), high contrast, warm earth tones.
 
-Wardrobe Inventory (closet.json):
-{closet_data}
+Recent Style History (Last 30 Days):
+{recent_recommendations_str}
 
-Please recommend a complete outfit combination from the user's wardrobe inventory (items that are actually in closet.json) that is suitable for today's weather.
-Explain your styling choice and why it works for the weather.
+CRITICAL RULES FOR ROTATION AND VARIETY:
+1. **NO WEEKLY REPETITION**: You MUST NOT recommend any item that has been worn in the last 7 days. If a category (like belts) has limited choices, prioritize the item worn longest ago.
+2. **MONTHLY VARIETY**: Avoid repeating items that have been worn in the last 30 days. Prioritize items labeled "last_recommended: never" or with a low frequency ("times_recommended_last_30_days"). Do NOT repeat the exact same combination of top, bottom, and belt.
+3. **REDUCE WEATHER OVER-OPTIMIZATION**: Treat the weather category as a loose guide. If it is hot, simply avoid heavy sweaters or long sleeves; you do not need to choose the same short-sleeve polo shirt every hot day. Choose from a wide range of shirts, t-shirts, and light tops to ensure variety. Rotate through colors (emerald, sapphire, ruby, slate, etc.) and styles.
+
+Available Wardrobe Inventory (Pre-filtered to support rotation):
+{json.dumps(filtered_closet, indent=2)}
+
+Please recommend a complete outfit combination from the provided available wardrobe inventory (choose strictly from items in the list above) that is suitable for today's weather category.
+Explain your styling choice and why it works, and comment on the rotation choice (e.g., noting that this item hasn't been worn in a while).
 
 Format your output exactly as follows for Telegram/WhatsApp delivery:
 🌤️ **Weather**: {weather_str}
@@ -419,12 +646,12 @@ Format your output exactly as follows for Telegram/WhatsApp delivery:
 
 Additionally, you MUST output the following two blocks at the very end of your response:
 
-1. A raw JSON block inside a block tagged with [JSON_START] and [JSON_END], listing the OOTD items chosen:
+1. A raw JSON block inside a block tagged with [JSON_START] and [JSON_END], listing the OOTD items chosen (make sure to copy the "id" exactly from the available inventory list):
 [JSON_START]
 {{
-  "top": {{"brand": "Brand", "name": "Item Name", "color": "Color"}},
-  "bottom": {{"brand": "Brand", "name": "Item Name", "color": "Color"}},
-  "belt": {{"brand": "Brand", "name": "Item Name", "color": "Color"}}
+  "top": {{"id": "item-id", "brand": "Brand", "name": "Item Name", "color": "Color"}},
+  "bottom": {{"id": "item-id", "brand": "Brand", "name": "Item Name", "color": "Color"}},
+  "belt": {{"id": "item-id", "brand": "Brand", "name": "Item Name", "color": "Color"}}
 }}
 [JSON_END]
 
@@ -457,6 +684,36 @@ A photorealistic, high-quality, professional full-body portrait of a darkskinned
                 result = result.replace(match_json.group(0), "").strip()
             except Exception as e:
                 print(f"Error parsing OOTD JSON block: {e}")
+                
+        # Resolve recommended items and save to history
+        if ootd_json:
+            resolved_ootd = {}
+            for slot in ["top", "bottom", "belt"]:
+                item_desc = ootd_json.get(slot, {})
+                matched = find_item_in_closet(item_desc, closet_items)
+                if matched:
+                    resolved_ootd[slot] = {
+                        "id": matched.get("id"),
+                        "brand": matched.get("brand"),
+                        "name": matched.get("name"),
+                        "color": matched.get("color")
+                    }
+                else:
+                    resolved_ootd[slot] = {
+                        "id": item_desc.get("id") or "",
+                        "brand": item_desc.get("brand") or "",
+                        "name": item_desc.get("name") or "",
+                        "color": item_desc.get("color") or ""
+                    }
+            
+            rec_date_str = target_date.strftime("%Y-%m-%d")
+            # Remove any existing entry for today's date to avoid duplicates on retries
+            history = [h for h in history if h.get("date") != rec_date_str]
+            history.append({
+                "date": rec_date_str,
+                "ootd": resolved_ootd
+            })
+            save_style_history(history)
 
         # Attempt to draw or generate OOTD photo
         image_path = os.path.join(WORKSPACE_DIR, "ootd.png")
@@ -721,7 +978,7 @@ def main():
                     print(f"[{dt_local.isoformat()}] Triggering AI Job: '{job_name}'")
                     
                     if job_name == "Good morning! Time for your daily style check.":
-                        success = execute_style_check(api_key, tg_token, wa_creds, job)
+                        success = execute_style_check(api_key, tg_token, wa_creds, job, target_date=dt_local)
                     elif job_name == "Evening Deal Hunter":
                         success = execute_deal_hunter(api_key)
                     else:
