@@ -1816,5 +1816,31 @@
         "Cloudy"
       ]
     }
+  },
+  {
+    "id": "th-tailored-multi-plaid-6tf0",
+    "name": "Tailored Fit Multi Plaid Button Up Shirt",
+    "brand": "Tommy Hilfiger",
+    "color": "Multi Plaid",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "L",
+    "warmth": "Light-Medium",
+    "style_tags": [
+      "Smart Casual",
+      "Plaid",
+      "Collared",
+      "Preppy",
+      "Button-Up"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Mild",
+        "Indoor",
+        "Warm"
+      ]
+    }
   }
 ]
