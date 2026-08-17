@@ -44,5 +44,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-08-17",
+    "ootd": {
+      "top": {
+        "id": "alfani-purple-slim",
+        "brand": "Alfani",
+        "name": "Purple Slim Fit Shirt",
+        "color": "Purple"
+      },
+      "bottom": {
+        "id": "ct-trc0274lgy-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
