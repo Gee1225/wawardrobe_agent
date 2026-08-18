@@ -67,5 +67,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-08-18",
+    "ootd": {
+      "top": {
+        "id": "th-tailored-multi-plaid-6tf0",
+        "brand": "Tommy Hilfiger",
+        "name": "Tailored Fit Multi Plaid Button Up Shirt",
+        "color": "Multi Plaid"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
