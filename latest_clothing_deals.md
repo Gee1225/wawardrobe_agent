@@ -1,30 +1,27 @@
-# Evening Deal Hunter: Curated Sales & Tailored Finds
+# Evening Deal Hunter's Top Professional Picks
 
-Here are the top sale events and deals currently available across your preferred brands, curated specifically to elevate your professional wardrobe and complement your existing closet inventory.
-
----
-
-### 1. Theory: Men's End of Season Sale
-* **Brand & Event:** [Theory Men's End of Season Sale](https://www.theory.com/men/sale/)
-* **Details / Price:** Major seasonal markdowns across tailored essentials, premium wool sweaters, blazers, and suit separates.
-* **Link:** [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight:** 
-  Your wardrobe is well-stocked with Charles Tyrwhitt dress shirts and tailored chinos, but adding a high-end Theory unstructured blazer or fine-gauge knit in deep sapphire or rich jewel tones will instantly elevate your office rotations. Theory’s modern tailored fits in size **L/M** layer seamlessly over your non-iron button-downs, pairing effortlessly with your Stone and Taupe chinos and Cognac Buckley belt.
+As your personal shopping assistant, I have analyzed your current closet inventory and your style profile (Size: Tops M/L, Bottoms 32-34W/32-34L; Palette: rich jewel tones, high contrast, warm earth tones). Based on the latest online markdown events, here are the three best sales to elevate your professional wardrobe right now.
 
 ---
 
-### 2. Banana Republic: Best of Men's Sale
-* **Brand & Event:** [Banana Republic Men's Sale & Clearance](https://bananarepublic.gap.com/browse/sale/mens-sale/best-of-sale?cid=1014757)
-* **Details / Price:** Deep discounts on business-ready essentials, including tailored Italian wool trousers, structured overshirts, and luxe knitwear.
-* **Link:** [Shop Banana Republic Best of Sale](https://bananarepublic.gap.com/browse/sale/mens-sale/best-of-sale?cid=1014757)
-* **Styling Insight:** 
-  Banana Republic’s signature palette leans heavily into rich earth tones (olive, espresso, camel) and jewel tones—ideal for your preferred color profile. Look for knit polo shirts or merino crewnecks in size **Medium/Large** or tailored dress trousers in **32–34W / 32–34L**. These items will bridge the gap between your casual pullovers and formal shirts while grounding your high-contrast outfits.
+### 1. Theory Men's End of Season Sale
+* **Brand & Sale Name**: Theory Men's End of Season Sale
+* **Details / Price**: Deep markdowns on premium tailoring, luxury merino/cashmere knits, refined dress shirts, and professional trousers. 
+* **Link**: [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
+* **Styling Insight**: Theory's precise tailoring is perfect for your size profile (M/L tops, 32-34 bottoms). Since your closet currently features a highly practical selection of Charles Tyrwhitt non-iron chinos in neutrals (Taupe, Stone, Black), a structured Theory blazer in deep navy (sapphire-adjacent) or a luxury sweater in a rich, warm earth tone will instantly elevate your professional look. Layer a deep-toned Theory knit over your *Charles Tyrwhitt Lilac Greenwich Weave Shirt* for an executive, high-contrast, and sophisticated office ensemble.
 
 ---
 
-### 3. J.Crew: Men's Seasonal Markdowns
-* **Brand & Event:** [J.Crew Men's Sale Collection](https://www.jcrew.com/sale/men)
-* **Details / Price:** Clearance and promotional markdowns across knitwear, chore jackets, and dress-casual shirting.
-* **Link:** [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
-* **Styling Insight:** 
-  J.Crew is the master of high-contrast, preppy-meets-professional layering. Target their cotton-cashmere sweaters or lightweight cardigans in ruby, emerald, or deep navy (size **L/M**). They will layer cleanly under your Calvin Klein and Michael Kors outerwear and pair naturally with your 32x34 Charles Tyrwhitt chinos and Black Buckley belt for polished business-casual days.
+### 2. Banana Republic Men's Sale Event
+* **Brand & Sale Name**: Banana Republic Men's Apparel Sale
+* **Details / Price**: Seasonal discounts on professional tailoring, signature Rapid Movement chinos, and premium dress shirts.
+* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
+* **Styling Insight**: Banana Republic excels at the exact palette you love—rich jewel tones (teals, emeralds) and warm earth tones (terracotta, deep olive, and camel). Since your current inventory is heavily stocked with pink, lilac, and light blue shirts, look for a sharp, tailored sport coat in emerald green or a rich chocolate brown here in your size (Medium/Large). Pairing a warm-toned BR blazer with your existing *Charles Tyrwhitt Airforce Blue Chinos* and your *Cognac Buckley Belt* will create a stunning, high-contrast professional outfit.
+
+---
+
+### 3. J.Crew Men's Sale & Clearance
+* **Brand & Sale Name**: J.Crew Men's Sale Event
+* **Details / Price**: Significant price cuts on classic Ludlow suiting separates, premium dress shirts, and Italian wool sweaters.
+* **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale)
+* **Styling Insight**: Your wardrobe has a fantastic base of business-casual shirts and casual pullovers, but could benefit from a few more highly structured professional layering pieces. Use this J.Crew sale to hunt for their iconic Ludlow tailoring in your size (38R/40R or M/L). Look specifically for a Ludlow suit jacket or blazer in a rich, high-contrast navy or a deep ruby tone. This will pair beautifully with your *Thomas Stone White Dress Shirt* and your 32W or 34W *Ultimate Non-Iron Chinos*, bridging the gap between your smart-casual pieces and formal boardroom presentation needs.
