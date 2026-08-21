@@ -113,5 +113,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-08-21",
+    "ootd": {
+      "top": {
+        "id": "ct-csc0031lmn",
+        "brand": "Charles Tyrwhitt",
+        "name": "Button-Down Stretch Washed Oxford Shirt",
+        "color": "Lemon Yellow"
+      },
+      "bottom": {
+        "id": "ct-trc0290afb-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Airforce Blue"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
