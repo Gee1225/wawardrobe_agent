@@ -1842,5 +1842,63 @@
         "Warm"
       ]
     }
+  },
+  {
+    "id": "th-197500676627-16.5-3637",
+    "name": "Regular Fit Wrinkle Resistant Stretch Dress Shirt",
+    "brand": "Tommy Hilfiger",
+    "color": "Jade",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16.5 36/37",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Regular Fit",
+      "Wrinkle Resistant",
+      "Stretch",
+      "Dress Shirt",
+      "Button-Up",
+      "Collared"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any",
+        "Sunny",
+        "Cloudy",
+        "Indoor"
+      ]
+    }
+  },
+  {
+    "id": "th-regular-fit-stretch-pine-multi-16.5-3637",
+    "name": "Regular Fit Wrinkle Resistant Stretch Dress Shirt",
+    "brand": "Tommy Hilfiger",
+    "color": "Pine Multi",
+    "category": "Top",
+    "sub_category": "Shirt",
+    "size": "16.5 36/37",
+    "quantity": 1,
+    "warmth": "Light",
+    "style_tags": [
+      "Regular Fit",
+      "Wrinkle Resistant",
+      "Stretch",
+      "Dress Shirt",
+      "Button-Up",
+      "Collared"
+    ],
+    "weather_compatibility": {
+      "min_temp": 50,
+      "max_temp": 85,
+      "conditions": [
+        "Any",
+        "Sunny",
+        "Cloudy",
+        "Indoor"
+      ]
+    }
   }
 ]
