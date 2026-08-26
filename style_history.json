@@ -182,5 +182,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-08-26",
+    "ootd": {
+      "top": {
+        "id": "statement-checked-red-white",
+        "brand": "Statement Confidence",
+        "name": "Red and White Checked Shirt",
+        "color": "Red/White"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav",
+        "brand": "Charles Tyrwhitt",
+        "name": "Navy Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
