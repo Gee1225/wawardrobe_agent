@@ -205,5 +205,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-08-28",
+    "ootd": {
+      "top": {
+        "id": "ct-fon2665pnk-16.5-35",
+        "brand": "Charles Tyrwhitt",
+        "name": "Slim Fit Pink Non-Iron Twill Puppytooth Shirt",
+        "color": "Pink"
+      },
+      "bottom": {
+        "id": "flex-slim-dark-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Dark Gray"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
