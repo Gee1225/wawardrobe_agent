@@ -251,5 +251,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-08-31",
+    "ootd": {
+      "top": {
+        "id": "ct-jep0317wht",
+        "brand": "Charles Tyrwhitt",
+        "name": "Smart Cotton Polo",
+        "color": "White"
+      },
+      "bottom": {
+        "id": "ct-trc0290afb",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Airforce Blue"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
