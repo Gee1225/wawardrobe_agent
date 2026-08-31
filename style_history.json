@@ -228,5 +228,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-08-30",
+    "ootd": {
+      "top": {
+        "id": "ct-csp0007wht",
+        "brand": "Charles Tyrwhitt",
+        "name": "Short Sleeve Non-Iron Poplin Ice Cream Print Shirt",
+        "color": "White"
+      },
+      "bottom": {
+        "id": "ct-trc0270stn-32-34",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
