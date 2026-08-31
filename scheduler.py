@@ -261,29 +261,59 @@ def ddg_search(query):
     except Exception as e:
         return f"Error searching DuckDuckGo: {e}"
 
-def call_gemini(api_key, prompt, model="gemini-3.5-flash"):
+def call_gemini(api_key, prompt, model="gemini-3.6-flash"):
     if not api_key:
         print("Error: Gemini API Key is missing. Cannot invoke model.")
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+        
+    models_to_try = [
+        model,
+        "gemini-3.6-flash",
+        "gemini-3.5-flash",
+        "gemini-3.7-flash",
+        "gemini-flash-latest",
+        "gemini-3.1-flash-lite"
+    ]
+    # Deduplicate while preserving order
+    seen = set()
+    ordered_models = []
+    for m in models_to_try:
+        if m and m not in seen:
+            seen.add(m)
+            ordered_models.append(m)
+
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [{"parts": [{"text": prompt}]}]
     }
-    req = urllib.request.Request(
-        url, 
-        data=json.dumps(payload).encode("utf-8"), 
-        headers=headers, 
-        method="POST"
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=90) as response:
-            res = json.loads(response.read().decode("utf-8"))
-            return res['candidates'][0]['content']['parts'][0]['text']
-    except urllib.error.HTTPError as e:
-        print(f"Gemini API HTTP Error {e.code}: {e.read().decode('utf-8')}")
-    except Exception as e:
-        print(f"Gemini API Connection Error: {e}")
+
+    import time
+    for m in ordered_models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={api_key}"
+        for attempt in range(1, 4):
+            try:
+                req = urllib.request.Request(
+                    url, 
+                    data=json.dumps(payload).encode("utf-8"), 
+                    headers=headers, 
+                    method="POST"
+                )
+                with urllib.request.urlopen(req, timeout=45) as response:
+                    res = json.loads(response.read().decode("utf-8"))
+                    text = res['candidates'][0]['content']['parts'][0]['text']
+                    if text:
+                        return text
+            except urllib.error.HTTPError as e:
+                err_body = e.read().decode('utf-8', errors='ignore')
+                print(f"Gemini API HTTP Error {e.code} for model {m} (attempt {attempt}/3): {err_body}")
+                if e.code in (404, 400):
+                    # Model not found or unsupported; move immediately to the next model
+                    break
+                elif e.code in (429, 500, 502, 503, 504):
+                    time.sleep(attempt * 2)
+            except Exception as e:
+                print(f"Gemini API Connection Error for model {m} (attempt {attempt}/3): {e}")
+                time.sleep(attempt * 2)
     return None
 
 HISTORY_FILE = os.path.join(WORKSPACE_DIR, "style_history.json")
@@ -558,15 +588,23 @@ def execute_style_check(api_key, tg_token, wa_creds, job, target_date=None):
     print(f"Running Daily Style Check for target date: {target_date.strftime('%Y-%m-%d')}...")
     
     weather_str = "Unknown weather"
-    try:
-        req = urllib.request.Request(
-            "http://wttr.in/Bentonville+AR?format=%l:+%c+%t+%w",
-            headers={"User-Agent": "curl/7.79.1"}
-        )
-        with urllib.request.urlopen(req, timeout=10) as response:
-            weather_str = response.read().decode("utf-8").strip()
-    except Exception as e:
-        print(f"Error fetching weather: {e}")
+    weather_urls = [
+        "https://wttr.in/Bentonville+AR?format=%l:+%c+%t+%w",
+        "http://wttr.in/Bentonville+AR?format=%l:+%c+%t+%w"
+    ]
+    for w_url in weather_urls:
+        try:
+            req = urllib.request.Request(
+                w_url,
+                headers={"User-Agent": "curl/7.79.1"}
+            )
+            with urllib.request.urlopen(req, timeout=10) as response:
+                content = response.read().decode("utf-8", errors="ignore").strip()
+                if content and not content.startswith("<") and "502" not in content and "504" not in content:
+                    weather_str = content
+                    break
+        except Exception as e:
+            print(f"Error fetching weather from {w_url}: {e}")
         
     broad_weather, weather_advice = get_broad_weather(weather_str)
     
@@ -987,6 +1025,7 @@ def main():
 
     now = datetime.now(ZoneInfo("America/Chicago"))
     
+    state = {}
     last_run_str = None
     if os.path.exists(STATE_FILE):
         try:
@@ -995,6 +1034,8 @@ def main():
                 last_run_str = state.get("last_run")
         except Exception as e:
             print(f"Error reading state file: {e}")
+
+    job_completions = state.get("job_completions", {})
 
     if last_run_str:
         last_run = datetime.fromisoformat(last_run_str).astimezone(ZoneInfo("America/Chicago"))
@@ -1038,6 +1079,8 @@ def main():
             if match_cron(schedule_expr, dt_local):
                 payload = job.get("payload", {})
                 message_body = payload.get("message", "")
+                job_id = job.get("id")
+                date_str = dt_local.strftime("%Y-%m-%d")
                 
                 if is_static_telegram_job(message_body):
                     clean_text = extract_telegram_text(message_body)
@@ -1076,9 +1119,21 @@ def main():
                     print(f"[{dt_local.isoformat()}] Triggering AI Job: '{job_name}'")
                     
                     if job_name == "Good morning! Time for your daily style check.":
-                        success = execute_style_check(api_key, tg_token, wa_creds, job, target_date=dt_local)
+                        if job_completions.get(job_id) == date_str:
+                            print(f" -> Style check for {date_str} already completed. Skipping duplicate execution.")
+                            success = True
+                        else:
+                            success = execute_style_check(api_key, tg_token, wa_creds, job, target_date=dt_local)
+                            if success:
+                                job_completions[job_id] = date_str
                     elif job_name == "Evening Deal Hunter":
-                        success = execute_deal_hunter(api_key)
+                        if job_completions.get(job_id) == date_str:
+                            print(f" -> Evening Deal Hunter for {date_str} already completed. Skipping duplicate execution.")
+                            success = True
+                        else:
+                            success = execute_deal_hunter(api_key)
+                            if success:
+                                job_completions[job_id] = date_str
                     else:
                         # Generic AI job runner
                         print(f" -> Running generic AI job '{job_name}' using Gemini")
@@ -1100,7 +1155,7 @@ def main():
                                     print(" -> Generic WhatsApp notification sent.")
                     
                     due_ai_jobs.append({
-                        "id": job.get("id"),
+                        "id": job_id,
                         "name": job_name,
                         "time": dt_local.isoformat(),
                         "executed": success
@@ -1108,9 +1163,33 @@ def main():
 
         current_eval += timedelta(minutes=1)
 
+    # Catch-up check for today if weekday style check was missed due to runner delays or temporary errors
+    today_local = now.astimezone(ZoneInfo("America/Chicago"))
+    today_str = today_local.strftime("%Y-%m-%d")
+    today_dow = today_local.weekday() # 0 = Monday, 4 = Friday
+    if 0 <= today_dow <= 4 and (today_local.hour > 5 or (today_local.hour == 5 and today_local.minute >= 42)):
+        for job in jobs:
+            if not job.get("enabled", True):
+                continue
+            if job.get("name") == "Good morning! Time for your daily style check.":
+                job_id = job.get("id")
+                if job_completions.get(job_id) != today_str:
+                    print(f"Catch-up: Today's ({today_str}) Daily Style Check has not yet succeeded. Triggering now...")
+                    success = execute_style_check(api_key, tg_token, wa_creds, job, target_date=today_local)
+                    if success:
+                        job_completions[job_id] = today_str
+                    due_ai_jobs.append({
+                        "id": job_id,
+                        "name": job.get("name"),
+                        "time": today_local.isoformat(),
+                        "executed": success
+                    })
+
+    state["last_run"] = now.isoformat()
+    state["job_completions"] = job_completions
     try:
         with open(STATE_FILE, 'w') as f:
-            json.dump({"last_run": now.isoformat()}, f, indent=2)
+            json.dump(state, f, indent=2)
     except Exception as e:
         print(f"Error writing state file: {e}")
 
