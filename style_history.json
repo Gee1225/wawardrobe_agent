@@ -274,5 +274,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-09-01",
+    "ootd": {
+      "top": {
+        "id": "jab-jab6mfylrg68-large",
+        "brand": "Jos. A. Bank",
+        "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
+        "color": "Teal"
+      },
+      "bottom": {
+        "id": "ct-trc0279tpe-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Taupe Ultimate Non-Iron Chinos",
+        "color": "Taupe"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
