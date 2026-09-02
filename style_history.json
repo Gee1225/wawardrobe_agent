@@ -297,5 +297,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-09-02",
+    "ootd": {
+      "top": {
+        "id": "galaxy-lightblue",
+        "brand": "Galaxy by Harvic",
+        "name": "Light Blue Shirt",
+        "color": "Light Blue"
+      },
+      "bottom": {
+        "id": "ct-trc0295lmn",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Lemon"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
