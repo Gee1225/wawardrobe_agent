@@ -320,5 +320,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-09-03",
+    "ootd": {
+      "top": {
+        "id": "construct-pique-polo-green",
+        "brand": "Con.Struct",
+        "name": "Con.Struct Slim Fit Tennis Ball Tipped Pique Polo",
+        "color": "Green"
+      },
+      "bottom": {
+        "id": "flex-slim-light-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
