@@ -343,5 +343,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-09-04",
+    "ootd": {
+      "top": {
+        "id": "ct-foa0015llc",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Lilac Non-Iron Stretch Greenwich Weave Shirt",
+        "color": "Lilac"
+      },
+      "bottom": {
+        "id": "ct-trc0296tpe",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Taupe"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
