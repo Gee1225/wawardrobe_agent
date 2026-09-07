@@ -366,5 +366,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-09-07",
+    "ootd": {
+      "top": {
+        "id": "alfani-purple-slim",
+        "brand": "Alfani",
+        "name": "Purple Slim Fit Shirt",
+        "color": "Purple"
+      },
+      "bottom": {
+        "id": "flex-slim-light-khaki",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Khaki"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
