@@ -412,5 +412,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-09-09",
+    "ootd": {
+      "top": {
+        "id": "ct-csc0018pnk",
+        "brand": "Charles Tyrwhitt",
+        "name": "Non-Iron Stretch Poplin Check Short Sleeve Shirt",
+        "color": "Pink"
+      },
+      "bottom": {
+        "id": "chino-slim-navy",
+        "brand": "Unknown",
+        "name": "Slim Rotation Chino Pants",
+        "color": "In the Navy"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
