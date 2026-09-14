@@ -481,5 +481,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-09-14",
+    "ootd": {
+      "top": {
+        "id": "th-regular-fit-stretch-pine-multi-16.5-3637",
+        "brand": "Tommy Hilfiger",
+        "name": "Regular Fit Wrinkle Resistant Stretch Dress Shirt",
+        "color": "Pine Multi"
+      },
+      "bottom": {
+        "id": "ct-trc0274lgy-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
