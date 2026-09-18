@@ -573,5 +573,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-09-18",
+    "ootd": {
+      "top": {
+        "id": "jab-traveler-orange",
+        "brand": "Jos. A. Bank",
+        "name": "Traveler\u00ae Collection Slim Fit Spread Collar Dress Shirt",
+        "color": "Light Orange"
+      },
+      "bottom": {
+        "id": "ct-trc0270blk-32w-34l",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Black"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
