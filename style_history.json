@@ -596,5 +596,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-09-21",
+    "ootd": {
+      "top": {
+        "id": "josbank-pima-lightblue",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Pima Cotton 1/4 Zip",
+        "color": "Light Blue"
+      },
+      "bottom": {
+        "id": "george-blue-poly-pants",
+        "brand": "George",
+        "name": "Blue Polyester Pants",
+        "color": "Blue"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
