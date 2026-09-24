@@ -665,5 +665,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-09-24",
+    "ootd": {
+      "top": {
+        "id": "jcrew-quilted-slate",
+        "brand": "J.Crew Factory",
+        "name": "Quilted Quarter-Zip Pullover",
+        "color": "Heather Slate (Gray-Blue)"
+      },
+      "bottom": {
+        "id": "chino-straight-black-jack",
+        "brand": "Unknown",
+        "name": "Straight Rotation Chino Pants",
+        "color": "Black Jack"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
