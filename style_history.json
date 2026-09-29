@@ -734,5 +734,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-09-29",
+    "ootd": {
+      "top": {
+        "id": "galaxy-black",
+        "brand": "Galaxy by Harvic",
+        "name": "Black Shirt",
+        "color": "Black"
+      },
+      "bottom": {
+        "id": "ct-trc0270stn-32w-34l",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
