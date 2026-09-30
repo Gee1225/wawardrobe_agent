@@ -757,5 +757,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-09-30",
+    "ootd": {
+      "top": {
+        "id": "habit-checked-blue-white",
+        "brand": "Habit",
+        "name": "Blue and White Checked Shirt",
+        "color": "Blue/White"
+      },
+      "bottom": {
+        "id": "flex-slim-light-khaki",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Khaki"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
