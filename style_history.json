@@ -780,5 +780,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-01",
+    "ootd": {
+      "top": {
+        "id": "alfani-purple-slim",
+        "brand": "Alfani",
+        "name": "Purple Slim Fit Shirt",
+        "color": "Purple"
+      },
+      "bottom": {
+        "id": "ct-trc0270stn-32-34",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
