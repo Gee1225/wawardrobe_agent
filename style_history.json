@@ -803,5 +803,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-02",
+    "ootd": {
+      "top": {
+        "id": "ct-checked-blue-white",
+        "brand": "Charles Tyrwhitt",
+        "name": "Blue/White Checked Shirt",
+        "color": "Blue/White"
+      },
+      "bottom": {
+        "id": "flex-slim-light-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
