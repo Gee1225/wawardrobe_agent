@@ -826,5 +826,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-10-05",
+    "ootd": {
+      "top": {
+        "id": "th-197500676627-16.5-3637",
+        "brand": "Tommy Hilfiger",
+        "name": "Regular Fit Wrinkle Resistant Stretch Dress Shirt",
+        "color": "Jade"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
