@@ -849,5 +849,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-10-06",
+    "ootd": {
+      "top": {
+        "id": "zara-brown-sweater",
+        "brand": "Zara",
+        "name": "Polyester Brown Sweater",
+        "color": "Brown"
+      },
+      "bottom": {
+        "id": "levi-signature-jeans",
+        "brand": "Levi Strauss & Co",
+        "name": "Signature Jeans",
+        "color": "Blue"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
