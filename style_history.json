@@ -918,5 +918,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-09",
+    "ootd": {
+      "top": {
+        "id": "ct-fon2665pnk",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Pink Non-Iron Twill Puppytooth Shirt",
+        "color": "Pink"
+      },
+      "bottom": {
+        "id": "ct-trc0274lgy",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Light Gray Ultimate Non-Iron Chinos",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
