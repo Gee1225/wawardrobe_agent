@@ -964,5 +964,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-13",
+    "ootd": {
+      "top": {
+        "id": "ct-jep0317wht",
+        "brand": "Charles Tyrwhitt",
+        "name": "Smart Cotton Polo",
+        "color": "White"
+      },
+      "bottom": {
+        "id": "flex-slim-dark-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Dark Gray"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
