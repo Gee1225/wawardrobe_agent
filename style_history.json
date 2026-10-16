@@ -1033,5 +1033,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-10-16",
+    "ootd": {
+      "top": {
+        "id": "jcrew-quilted-slate",
+        "brand": "J.Crew Factory",
+        "name": "Quilted Quarter-Zip Pullover",
+        "color": "Heather Slate (Gray-Blue)"
+      },
+      "bottom": {
+        "id": "ct-trc0279tpe-34w-34l",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Taupe"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
