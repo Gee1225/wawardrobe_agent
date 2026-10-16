@@ -1,36 +1,29 @@
-# Evening Deal Hunter: Professional Wardrobe Sale Picks
+# Evening Deal Hunter: Tailored Sales & Style Briefing
 
-Welcome to your curated evening briefing! Based on your size profile (**Tops: M/L**, **Bottoms: 32-34W x 32-34L**) and your preference for **rich jewel tones, high contrast, and warm earth tones**, I’ve scoured current sales across your favorite brands.
+Hello! As your Evening Deal Hunter, I've scanned current sales across your favorite professional brands to pull the top opportunities that fit your sizing (Tops M/L, Bottoms 32–34W x 32–34L) and complement your rich jewel tone and warm earth tone preference.
 
-Looking at your wardrobe, you have an impressive foundation of Charles Tyrwhitt dress shirts (pink, lilac, white/red) and classic chinos (navy, taupe, stone). What your closet needs most to elevate to full professional caliber are **structured tailored blazers, rich layering pieces, and deep jewel-tone sport coats**.
-
-Here are the top sale events and deals to jump on tonight:
+Here are the top 3 curations matching your professional wardrobe needs:
 
 ---
 
 ### 1. Theory: Men's End of Season Sale
-* **Brand & Sale Name**: Theory Men's End of Season Sale — Precision Tailoring & Wool Trousers
-* **Details / Price**: Up to **60% off** regular retail on luxury blazers, fine merino sweaters, and tailored wool pants.
+* **Brand & Sale Name**: Theory — Men's End of Season Sale
+* **Details / Price**: Up to 50–60% off select elevated tailoring, luxury knitwear, and trousers.
 * **Link**: [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight**: Theory is legendary for sleek, minimalist fits. Look for a tailored jacket or unstructured blazer in a deep sapphire or dark emerald tone (Size L / 40R-42R). A deep jewel-toned Theory jacket will create a striking **high-contrast pairing** over your Charles Tyrwhitt Lilac (`ct-foa0015llc`) or Pink (`ct-fon2665pnk`) dress shirts, perfectly elevating your current office rotation with your Taupe or Light Gray chinos.
+* **Styling Insight**: Theory is ideal for bringing sleek, high-contrast structure into your office lineup. Look for fine merino crewnecks or unstructured blazers in deep sapphire, charcoal, or emerald (Size L/M). These layer effortlessly over your vast collection of Charles Tyrwhitt and Tommy Hilfiger dress shirts, giving your wardrobe a sharp, modern upgrade without clashing with your existing 32–34 classic chinos.
 
 ---
 
-### 2. Banana Republic: Seasonal Clearance Event
-* **Brand & Sale Name**: Banana Republic Men's Sale — Italian Wool Suits & Earth-Tone Layers
-* **Details / Price**: Over **50% off** select suit jackets, sport coats, and professional outerwear.
-* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
-* **Styling Insight**: Banana Republic shines in **warm earth tones** (rust, olive, rich cognac) and textured wool blazers. Adding a deep rust or dark olive blazer in size L to your wardrobe instantly grounds your brighter tops (like your Lemon Yellow Oxford or Light Orange Traveler shirt). It also pairs flawlessly with your Cognac Buckley Belt and your CT Taupe/Stone chinos (`ct-trc0279tpe` / `ct-trc0270stn`).
-
----
-
-### 3. J.Crew: Men's Clearance & Promo Markdowns
-* **Brand & Sale Name**: J.Crew Men's Sale Section — Jewel-Tone Knits & Classic Sport Coats
-* **Details / Price**: Extra **30%–50% off** already-reduced sale styles with active site promos (up to 70% off original retail).
+### 2. J.Crew: Men's Sale Event
+* **Brand & Sale Name**: J.Crew — Men's Seasonal Sale & Workwear Markdowns
+* **Details / Price**: Major markdowns on fall/winter essentials plus extra savings at checkout on clearance items.
 * **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
-* **Styling Insight**: J.Crew is the master of rich jewel tones—specifically ruby reds, emerald greens, and rich sapphires. Target a fine-gauge knit sweater or sport coat in Size M or L. A rich ruby red or dark emerald sweater layered over your CT White & Red print shirt (`ct-scs0115pnk`) provides fantastic high-contrast polish for business-casual settings, anchored nicely by your Navy Classic Fit Chinos (`ct-trc0291nav`).
+* **Styling Insight**: J.Crew shines in rich jewel tones and warm earth tones (rubies, deep olives, and rich browns). Look out for Ludlow sport coats in Size 40/42 or tailored sweaters in Size M/L. Pairing an emerald or dark ruby J.Crew sweater with your light gray CT chinos or navy rotation pants adds instant warmth and high-contrast color depth.
 
 ---
 
-### Hunter's Summary Advice
-If you can only pick one upgrade tonight, prioritize a **dark sapphire or emerald wool blazer from Theory or Banana Republic**. You already have the underlying shirt and pant options down—a sharp jacket in a jewel or earth tone is the missing link to bridge your current wardrobe into high-impact professional outfits.
+### 3. Banana Republic: Once-a-Year Price Event
+* **Brand & Sale Name**: Banana Republic — Men's Sale & Clearance
+* **Details / Price**: Deep discounts on tailored dress shirts, Italian wool trousers, and professional outerwear.
+* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
+* **Styling Insight**: Banana Republic excels at warm earth tones (cognac, espresso, deep terra cotta) and structured office bottoms in your exact 32–34 waist/length range. Pick up an Italian wool dress trouser or structured trench coat to bridge the gap between your casual chinos and formal office wear, matching cleanly with your Buckley cognac leather belts.
