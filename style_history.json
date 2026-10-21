@@ -1079,5 +1079,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-21",
+    "ootd": {
+      "top": {
+        "id": "ct-csr2134afb",
+        "brand": "Charles Tyrwhitt",
+        "name": "Textured Flannel Shirt",
+        "color": "Airforce Blue"
+      },
+      "bottom": {
+        "id": "flex-slim-light-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Gray"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
