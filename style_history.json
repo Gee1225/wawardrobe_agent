@@ -1102,5 +1102,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-10-22",
+    "ootd": {
+      "top": {
+        "id": "josbank-jacquard-beige",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Shirt Front Jacquard Sweater",
+        "color": "Cartouche Heather (Beige)"
+      },
+      "bottom": {
+        "id": "ct-trc0290afb-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Airforce Blue"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
