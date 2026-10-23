@@ -1125,5 +1125,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-10-23",
+    "ootd": {
+      "top": {
+        "id": "josbank-pima-lightblue",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Pima Cotton 1/4 Zip",
+        "color": "Light Blue"
+      },
+      "bottom": {
+        "id": "chino-slim-navy",
+        "brand": "Unknown",
+        "name": "Slim Rotation Chino Pants",
+        "color": "In the Navy"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
