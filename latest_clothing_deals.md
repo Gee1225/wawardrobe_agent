@@ -1,29 +1,32 @@
-# Evening Deal Hunter: Tailored Sales & Style Briefing
+# Evening Deal Hunter: Tailored Professional Sales Picks
 
-Hello! As your Evening Deal Hunter, I've scanned current sales across your favorite professional brands to pull the top opportunities that fit your sizing (Tops M/L, Bottoms 32–34W x 32–34L) and complement your rich jewel tone and warm earth tone preference.
-
-Here are the top 3 curations matching your professional wardrobe needs:
+Here are tonight’s top sales curated specifically for your profile (Tops L/M, Bottoms 32–34W x 32–34L) with an emphasis on rich jewel tones, warm earth tones, and elevated professional styling to integrate seamlessly into your wardrobe.
 
 ---
 
 ### 1. Theory: Men's End of Season Sale
 * **Brand & Sale Name**: Theory — Men's End of Season Sale
-* **Details / Price**: Up to 50–60% off select elevated tailoring, luxury knitwear, and trousers.
+* **Details / Price**: Up to 60% off select seasonal styles; extra 15% off promo options available site-wide.
 * **Link**: [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight**: Theory is ideal for bringing sleek, high-contrast structure into your office lineup. Look for fine merino crewnecks or unstructured blazers in deep sapphire, charcoal, or emerald (Size L/M). These layer effortlessly over your vast collection of Charles Tyrwhitt and Tommy Hilfiger dress shirts, giving your wardrobe a sharp, modern upgrade without clashing with your existing 32–34 classic chinos.
+* **Styling Insight**: Theory excels at minimal, sharp-cut professional tailoring. Look for dark sapphire or deep ruby knitwear in Size L to layer over your existing Charles Tyrwhitt button-downs. Their tailored trousers in 32–34W offer a streamlined high-contrast silhouette when paired with lighter earth-tone tops (like your *Cartouche Heather* beige jacquard sweater).
 
 ---
 
-### 2. J.Crew: Men's Sale Event
-* **Brand & Sale Name**: J.Crew — Men's Seasonal Sale & Workwear Markdowns
-* **Details / Price**: Major markdowns on fall/winter essentials plus extra savings at checkout on clearance items.
+### 2. J.Crew: Men's Fall Clearance & Sale
+* **Brand & Sale Name**: J.Crew — Men's Seasonal Sale & Double-Discount Clearance
+* **Details / Price**: Up to 80%+ off select markdowns, including cashmere tops, rollneck sweaters, and tailored blazers.
 * **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
-* **Styling Insight**: J.Crew shines in rich jewel tones and warm earth tones (rubies, deep olives, and rich browns). Look out for Ludlow sport coats in Size 40/42 or tailored sweaters in Size M/L. Pairing an emerald or dark ruby J.Crew sweater with your light gray CT chinos or navy rotation pants adds instant warmth and high-contrast color depth.
+* **Styling Insight**: J.Crew is the ideal source for rich jewel tones—specifically emerald green and ruby red knitwear and wool blazers. Adding an emerald green sweater in Size L gives you a striking, rich layer to pair over your white or blue checked dress shirts and against your navy/black CT chinos for high-contrast professional office wear.
 
 ---
 
-### 3. Banana Republic: Once-a-Year Price Event
-* **Brand & Sale Name**: Banana Republic — Men's Sale & Clearance
-* **Details / Price**: Deep discounts on tailored dress shirts, Italian wool trousers, and professional outerwear.
-* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
-* **Styling Insight**: Banana Republic excels at warm earth tones (cognac, espresso, deep terra cotta) and structured office bottoms in your exact 32–34 waist/length range. Pick up an Italian wool dress trouser or structured trench coat to bridge the gap between your casual chinos and formal office wear, matching cleanly with your Buckley cognac leather belts.
+### 3. Banana Republic: Men's Event Markdowns
+* **Brand & Sale Name**: Banana Republic — Professional Markdowns & Suiting Sale
+* **Details / Price**: 40%–50% off select professional styles, Italian wool suiting separates, and tailored dress shirts.
+* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/category.do?cid=26219)
+* **Styling Insight**: Banana Republic shines in warm earth tones (cognac, tobacco, warm olive, rust). A warm brown or rust wool blazer in Large will elevate your rotation of light blue and white CT dress shirts. It also ties together your *Buckley Cognac* belt and taupe/light gray chinos into a rich, cohesive business casual ensemble.
+
+---
+
+### Pro-Shopping Recommendation
+Since your closet already features strong basic bottoms (taupe, light gray, black, navy chinos) and solid dress shirt coverage, **focus this sale round on structured layering pieces (blazers, refined wool sweaters) in Emerald or Sapphire**. This fills the gap for high-contrast outer layers while making full use of your existing inventory.
