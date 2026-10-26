@@ -1148,5 +1148,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-26",
+    "ootd": {
+      "top": {
+        "id": "jcrew-thermal-green",
+        "brand": "J.Crew Factory",
+        "name": "Long-sleeve Thermal Crewneck Tee",
+        "color": "Smoke Teal (Green)"
+      },
+      "bottom": {
+        "id": "ct-trc0270stn-32-34",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
