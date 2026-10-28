@@ -1194,5 +1194,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-10-28",
+    "ootd": {
+      "top": {
+        "id": "jab-jab6mfylrg68-large",
+        "brand": "Jos. A. Bank",
+        "name": "Traveler\u00ae Collection Tailored Fit Performance Short Sleeve Polo",
+        "color": "Teal"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
