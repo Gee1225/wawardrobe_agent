@@ -1217,5 +1217,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-10-29",
+    "ootd": {
+      "top": {
+        "id": "ct-foa0015llc16h6s-16.5-36",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Lilac Non-Iron Stretch Greenwich Weave Shirt",
+        "color": "Lilac Purple"
+      },
+      "bottom": {
+        "id": "ct-trc0279tpe-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF Taupe Ultimate Non-Iron Chinos",
+        "color": "Taupe"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
