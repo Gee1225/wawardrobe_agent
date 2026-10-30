@@ -1240,5 +1240,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-10-30",
+    "ootd": {
+      "top": {
+        "id": "th-197500676627-16.5-3637",
+        "brand": "Tommy Hilfiger",
+        "name": "Regular Fit Wrinkle Resistant Stretch Dress Shirt",
+        "color": "Jade"
+      },
+      "bottom": {
+        "id": "chino-straight-black-jack",
+        "brand": "Unknown",
+        "name": "Straight Rotation Chino Pants",
+        "color": "Black Jack"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
