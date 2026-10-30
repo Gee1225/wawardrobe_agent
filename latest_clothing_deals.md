@@ -1,32 +1,27 @@
-# Evening Deal Hunter: Tailored Professional Sales Picks
+# Evening Deal Hunter: Top Sales for Your Wardrobe Profile
 
-Here are tonight’s top sales curated specifically for your profile (Tops L/M, Bottoms 32–34W x 32–34L) with an emphasis on rich jewel tones, warm earth tones, and elevated professional styling to integrate seamlessly into your wardrobe.
-
----
-
-### 1. Theory: Men's End of Season Sale
-* **Brand & Sale Name**: Theory — Men's End of Season Sale
-* **Details / Price**: Up to 60% off select seasonal styles; extra 15% off promo options available site-wide.
-* **Link**: [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight**: Theory excels at minimal, sharp-cut professional tailoring. Look for dark sapphire or deep ruby knitwear in Size L to layer over your existing Charles Tyrwhitt button-downs. Their tailored trousers in 32–34W offer a streamlined high-contrast silhouette when paired with lighter earth-tone tops (like your *Cartouche Heather* beige jacquard sweater).
+Here are tonight's top curated sale events and deals tailored specifically to your size (Tops M/L, Bottoms 32–34W/32–34L), favorite brands, and rich jewel/earth tone color preferences.
 
 ---
 
-### 2. J.Crew: Men's Fall Clearance & Sale
-* **Brand & Sale Name**: J.Crew — Men's Seasonal Sale & Double-Discount Clearance
-* **Details / Price**: Up to 80%+ off select markdowns, including cashmere tops, rollneck sweaters, and tailored blazers.
-* **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
-* **Styling Insight**: J.Crew is the ideal source for rich jewel tones—specifically emerald green and ruby red knitwear and wool blazers. Adding an emerald green sweater in Size L gives you a striking, rich layer to pair over your white or blue checked dress shirts and against your navy/black CT chinos for high-contrast professional office wear.
+### 1. J.Crew Men's Final Sale Event
+* **Brand & Sale Name**: J.Crew — Extra 40%–60% Off Final Sale
+* **Details / Price**: Stacked seasonal clearance with double-discount offers bringing luxury knits, blazers, and layering tops down by up to 80%+ off retail.
+* **Link**: [J.Crew Men's Sale Section](https://www.jcrew.com/sale/men)
+* **Styling Insight**: This sale is the ideal time to grab rich jewel-tone layers—such as an emerald green rollneck sweater, a ruby red merino layer, or an earth-toned unstructured wool blazer in Size L/M. These pieces layer effortlessly over your extensive collection of Charles Tyrwhitt dress shirts (like your White/Red or Pink twill button-downs) and elevate your navy and taupe 34x32 chinos into high-contrast, office-ready outfits.
 
 ---
 
-### 3. Banana Republic: Men's Event Markdowns
-* **Brand & Sale Name**: Banana Republic — Professional Markdowns & Suiting Sale
-* **Details / Price**: 40%–50% off select professional styles, Italian wool suiting separates, and tailored dress shirts.
-* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/category.do?cid=26219)
-* **Styling Insight**: Banana Republic shines in warm earth tones (cognac, tobacco, warm olive, rust). A warm brown or rust wool blazer in Large will elevate your rotation of light blue and white CT dress shirts. It also ties together your *Buckley Cognac* belt and taupe/light gray chinos into a rich, cohesive business casual ensemble.
+### 2. Theory Men’s End of Season Sale
+* **Brand & Sale Name**: Theory — End of Season Sale
+* **Details / Price**: Significant seasonal markdowns on premier tailored clothing, including elevated dress shirts, stretch wool trousers, and minimalist blazers.
+* **Link**: [Theory Men's Sale](https://www.theory.com/men/sale/)
+* **Styling Insight**: Theory offers modern, clean silhouettes that bring a luxury "Quiet Luxury" aesthetic to professional attire. Look for deep sapphire or chocolate/earth-toned suit jackets (Size L) or precision-fit trousers in 32–34W. Pairing a sleek Theory dark sapphire blazer with your Charles Tyrwhitt Taupe or Stone non-iron chinos creates a sharp, high-contrast professional look anchored by your cognac Buckley leather belt.
 
 ---
 
-### Pro-Shopping Recommendation
-Since your closet already features strong basic bottoms (taupe, light gray, black, navy chinos) and solid dress shirt coverage, **focus this sale round on structured layering pieces (blazers, refined wool sweaters) in Emerald or Sapphire**. This fills the gap for high-contrast outer layers while making full use of your existing inventory.
+### 3. Bloomingdale's Designer Sale: Theory Menswear
+* **Brand & Sale Name**: Theory at Bloomingdale's — Men's Sale Event
+* **Details / Price**: Up to 40%–50% off select Theory tailored jackets, dress shirts, and seasonal knits.
+* **Link**: [Bloomingdale's Theory Sale](https://www.bloomingdales.com/shop/sale/men/Brand/Theory?id=1001174)
+* **Styling Insight**: Since your wardrobe already features a solid baseline of dress shirts and chinos, use this department store sale to add a standalone, high-end layering piece—such as a rich earth-toned fine-knit sweater or a structured dark jacket. Fitting comfortably in Medium or Large, these items easily bridge your casual items (like your Airforce Blue chinos) with higher-end professional looks.
