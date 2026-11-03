@@ -1263,5 +1263,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-03",
+    "ootd": {
+      "top": {
+        "id": "jcrew-quilted-slate",
+        "brand": "J.Crew Factory",
+        "name": "Quilted Quarter-Zip Pullover",
+        "color": "Heather Slate (Gray-Blue)"
+      },
+      "bottom": {
+        "id": "flex-slim-dark-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Dark Gray"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
