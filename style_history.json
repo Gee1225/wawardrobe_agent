@@ -1286,5 +1286,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-11-04",
+    "ootd": {
+      "top": {
+        "id": "alfani-purple-slim",
+        "brand": "Alfani",
+        "name": "Purple Slim Fit Shirt",
+        "color": "Purple"
+      },
+      "bottom": {
+        "id": "lee-black-pants",
+        "brand": "Lee",
+        "name": "Black Pants",
+        "color": "Black"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
