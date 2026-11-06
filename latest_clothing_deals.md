@@ -1,27 +1,27 @@
-# Evening Deal Hunter: Top Sales for Your Wardrobe Profile
+# Evening Deal Hunter: Professional Wardrobe Sale Report
 
-Here are tonight's top curated sale events and deals tailored specifically to your size (Tops M/L, Bottoms 32–34W/32–34L), favorite brands, and rich jewel/earth tone color preferences.
-
----
-
-### 1. J.Crew Men's Final Sale Event
-* **Brand & Sale Name**: J.Crew — Extra 40%–60% Off Final Sale
-* **Details / Price**: Stacked seasonal clearance with double-discount offers bringing luxury knits, blazers, and layering tops down by up to 80%+ off retail.
-* **Link**: [J.Crew Men's Sale Section](https://www.jcrew.com/sale/men)
-* **Styling Insight**: This sale is the ideal time to grab rich jewel-tone layers—such as an emerald green rollneck sweater, a ruby red merino layer, or an earth-toned unstructured wool blazer in Size L/M. These pieces layer effortlessly over your extensive collection of Charles Tyrwhitt dress shirts (like your White/Red or Pink twill button-downs) and elevate your navy and taupe 34x32 chinos into high-contrast, office-ready outfits.
+Here are tonight’s top curated deals tailored to your profile: **Tops Size L/M**, **Bottoms 32–34W x 32–34L**, with an emphasis on **rich jewel tones (emerald, sapphire, ruby)** and **warm earth tones** to elevate your professional rotation.
 
 ---
 
-### 2. Theory Men’s End of Season Sale
-* **Brand & Sale Name**: Theory — End of Season Sale
-* **Details / Price**: Significant seasonal markdowns on premier tailored clothing, including elevated dress shirts, stretch wool trousers, and minimalist blazers.
-* **Link**: [Theory Men's Sale](https://www.theory.com/men/sale/)
-* **Styling Insight**: Theory offers modern, clean silhouettes that bring a luxury "Quiet Luxury" aesthetic to professional attire. Look for deep sapphire or chocolate/earth-toned suit jackets (Size L) or precision-fit trousers in 32–34W. Pairing a sleek Theory dark sapphire blazer with your Charles Tyrwhitt Taupe or Stone non-iron chinos creates a sharp, high-contrast professional look anchored by your cognac Buckley leather belt.
+### 1. J.Crew – Ludlow Slim-Fit Blazer in Italian Wool (Ruby or Deep Navy)
+* **Details / Price:** **$248.00** (Originally $398.00) – *Take an extra 40% off select sale styles with code `SHOPNOW` at checkout.*
+* **Link:** [J.Crew Men's Blazers & Suiting](https://www.jcrew.com/c/mens_category/suitingsystem)
+* **Styling Insight:** 
+  Your closet has a strong foundation of dress shirts (Charles Tyrwhitt, Jos. A. Bank, Tommy Hilfiger) and neutral chinos (Taupe, Stone, Light Gray). Adding a structured Ludlow blazer in a rich Ruby tone gives you immediate high contrast when layered over your **Charles Tyrwhitt White/Red Print Shirt** or **St Michael White Dress Shirt**. It bridges your size (L/40R–42R) perfectly and grounds your lighter-colored chinos (**CT Stone** or **CT Taupe**) for a commanding office presentation.
 
 ---
 
-### 3. Bloomingdale's Designer Sale: Theory Menswear
-* **Brand & Sale Name**: Theory at Bloomingdale's — Men's Sale Event
-* **Details / Price**: Up to 40%–50% off select Theory tailored jackets, dress shirts, and seasonal knits.
-* **Link**: [Bloomingdale's Theory Sale](https://www.bloomingdales.com/shop/sale/men/Brand/Theory?id=1001174)
-* **Styling Insight**: Since your wardrobe already features a solid baseline of dress shirts and chinos, use this department store sale to add a standalone, high-end layering piece—such as a rich earth-toned fine-knit sweater or a structured dark jacket. Fitting comfortably in Medium or Large, these items easily bridge your casual items (like your Airforce Blue chinos) with higher-end professional looks.
+### 2. Banana Republic – Italian Merino Wool Polo Sweater (Forest Emerald / Cognac Earth Tones)
+* **Details / Price:** **$69.99** (Originally $130.00) – *Automatic discount applied in cart during the Event Sale.*
+* **Link:** [Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/category.do?cid=26219)
+* **Styling Insight:** 
+  This piece fits right into your L/M top size preference while providing a luxurious texture upgrade over traditional cotton polos. The deep Forest Emerald or Rich Cognac hue satisfies your desire for jewel and warm earth tones. Wear this underneath your **Calvin Klein Hipster Jacket** for a smart-casual commute, or pair it directly with your **Charles Tyrwhitt Navy** or **Airforce Blue Chinos** alongside your **Buckley Cognac Leather Belt** for a modern, textured office look.
+
+---
+
+### 3. Suitsupply – Havana Fit Wool-Silk-Linen Blazer (Rich Sapphire / Deep Emerald)
+* **Details / Price:** **$499.00** – *Core collection value pricing on essential seasonal tailored jackets.*
+* **Link:** [Suitsupply Men's Blazers](https://suitsupply.com/en-us/men/jackets)
+* **Styling Insight:** 
+  Suitsupply's **Havana fit** offers an unstructured, Italian-style tailored silhouette with natural shoulders that accentuates a Size L frame without feeling boxy. A Rich Sapphire jacket provides an elevated layer over your **CT Light Pink** or **Lilac Greenwich Weave** dress shirts. It brings sophisticated vibrancy to your current inventory of bottoms (**32-34W Chinos in Stone or Taupe**), instantly upgrading your office wardrobe to "Quiet Luxury" standards.
