@@ -1332,5 +1332,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-06",
+    "ootd": {
+      "top": {
+        "id": "ct-scs0115pnk",
+        "brand": "Charles Tyrwhitt",
+        "name": "SF White & Red Non-Iron Stretch Print Shirt",
+        "color": "White/Red"
+      },
+      "bottom": {
+        "id": "ct-trc0296tpe-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Taupe"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
