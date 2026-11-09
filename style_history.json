@@ -1355,5 +1355,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-11-09",
+    "ootd": {
+      "top": {
+        "id": "ct-csr2134afb",
+        "brand": "Charles Tyrwhitt",
+        "name": "Textured Flannel Shirt",
+        "color": "Airforce Blue"
+      },
+      "bottom": {
+        "id": "ct-trc0270blk-32-34",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Black"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
