@@ -1401,5 +1401,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-11",
+    "ootd": {
+      "top": {
+        "id": "jcrew-thermal-green",
+        "brand": "J.Crew Factory",
+        "name": "Long-sleeve Thermal Crewneck Tee",
+        "color": "Smoke Teal (Green)"
+      },
+      "bottom": {
+        "id": "flex-slim-light-khaki",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Light Khaki"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
