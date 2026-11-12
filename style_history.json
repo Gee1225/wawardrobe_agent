@@ -1424,5 +1424,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-11-12",
+    "ootd": {
+      "top": {
+        "id": "zara-brown-sweater",
+        "brand": "Zara",
+        "name": "Polyester Brown Sweater",
+        "color": "Brown"
+      },
+      "bottom": {
+        "id": "ct-trc0295lmn",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Lemon"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
