@@ -1,27 +1,29 @@
-# Evening Deal Hunter: Professional Wardrobe Sale Report
+# Evening Deal Hunter: Handpicked Sales & Style Matches
 
-Here are tonight’s top curated deals tailored to your profile: **Tops Size L/M**, **Bottoms 32–34W x 32–34L**, with an emphasis on **rich jewel tones (emerald, sapphire, ruby)** and **warm earth tones** to elevate your professional rotation.
+Good evening! As your personal shopping assistant, I’ve scanned current sales at your preferred brands—**J.Crew, Banana Republic, and Theory**—to curate the best high-value deals matching your size profile (**Tops L/M, Bottoms 32–34W**) and color preferences (**jewel tones, high contrast, and warm earth tones**). 
 
----
-
-### 1. J.Crew – Ludlow Slim-Fit Blazer in Italian Wool (Ruby or Deep Navy)
-* **Details / Price:** **$248.00** (Originally $398.00) – *Take an extra 40% off select sale styles with code `SHOPNOW` at checkout.*
-* **Link:** [J.Crew Men's Blazers & Suiting](https://www.jcrew.com/c/mens_category/suitingsystem)
-* **Styling Insight:** 
-  Your closet has a strong foundation of dress shirts (Charles Tyrwhitt, Jos. A. Bank, Tommy Hilfiger) and neutral chinos (Taupe, Stone, Light Gray). Adding a structured Ludlow blazer in a rich Ruby tone gives you immediate high contrast when layered over your **Charles Tyrwhitt White/Red Print Shirt** or **St Michael White Dress Shirt**. It bridges your size (L/40R–42R) perfectly and grounds your lighter-colored chinos (**CT Stone** or **CT Taupe**) for a commanding office presentation.
+Here are tonight's top 3 curated sales events and recommendations for your wardrobe:
 
 ---
 
-### 2. Banana Republic – Italian Merino Wool Polo Sweater (Forest Emerald / Cognac Earth Tones)
-* **Details / Price:** **$69.99** (Originally $130.00) – *Automatic discount applied in cart during the Event Sale.*
-* **Link:** [Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/category.do?cid=26219)
-* **Styling Insight:** 
-  This piece fits right into your L/M top size preference while providing a luxurious texture upgrade over traditional cotton polos. The deep Forest Emerald or Rich Cognac hue satisfies your desire for jewel and warm earth tones. Wear this underneath your **Calvin Klein Hipster Jacket** for a smart-casual commute, or pair it directly with your **Charles Tyrwhitt Navy** or **Airforce Blue Chinos** alongside your **Buckley Cognac Leather Belt** for a modern, textured office look.
+### 1. J.Crew — Men's Sale & Extra Clearance Event
+* **Brand & Item/Sale Name**: J.Crew Men's Sale Section
+* **Details / Price**: Up to 50% off select professional tops, tailored blazers, and dress trousers, with extra discount codes applied at checkout on sale items.
+* **Link**: [Shop J.Crew Men's Sale](https://www.jcrew.com/sale/men)
+* **Styling Insight**: J.Crew's tailored fit in **Large/Medium** provides a clean, modern frame. Focus on picking up **emerald green or deep sapphire** fine merino wool sweaters or button-downs. These jewel tones contrast beautifully against your existing inventory of **Charles Tyrwhitt Taupe and Stone Chinos (34W/32L)** and align seamlessly with your **Buckley Cognac Belt**.
 
 ---
 
-### 3. Suitsupply – Havana Fit Wool-Silk-Linen Blazer (Rich Sapphire / Deep Emerald)
-* **Details / Price:** **$499.00** – *Core collection value pricing on essential seasonal tailored jackets.*
-* **Link:** [Suitsupply Men's Blazers](https://suitsupply.com/en-us/men/jackets)
-* **Styling Insight:** 
-  Suitsupply's **Havana fit** offers an unstructured, Italian-style tailored silhouette with natural shoulders that accentuates a Size L frame without feeling boxy. A Rich Sapphire jacket provides an elevated layer over your **CT Light Pink** or **Lilac Greenwich Weave** dress shirts. It brings sophisticated vibrancy to your current inventory of bottoms (**32-34W Chinos in Stone or Taupe**), instantly upgrading your office wardrobe to "Quiet Luxury" standards.
+### 2. Banana Republic — Men’s Tailored Layers & Sale
+* **Brand & Item/Sale Name**: Banana Republic Men's Sale & Seasonal Markdowns
+* **Details / Price**: Significant markdowns on Italian wool blazers, Rapid Movement Chinos, and elevated workwear shirts.
+* **Link**: [Shop Banana Republic Men's Sale](https://bananarepublic.gap.com/browse/men/mens-sale?cid=26219)
+* **Styling Insight**: Banana Republic excels in rich, warm earth tones (rust, deep cognac, olive) and sharp jewel tones like **ruby and burgundy**. Target a dark ruby or deep earth-toned tailored sport coat in **L** to layer over your collection of staple white and light pink dress shirts (**Thomas Stone White**, **CT Light Pink**). Combined with your **32-34W Navy or Black Chinos**, this delivers a striking, professional high-contrast look.
+
+---
+
+### 3. Theory — Men's End of Season Sale
+* **Brand & Item/Sale Name**: Theory Men's End of Season Sale
+* **Details / Price**: Up to 60% off luxury minimalist menswear, including precision-tailored suit separates, dress shirts, and elevated knits.
+* **Link**: [Shop Theory Men's Sale](https://www.theory.com/men/sale/)
+* **Styling Insight**: Theory is ideal for "quiet luxury" elevated office wear. Since your closet currently features several patterned and casual shirts, adding a sharp, minimalist **Theory precision wool blazer in deep sapphire or dark navy** (Size L) will instantly professionalize your light-colored collared tops. Pair it with your **32-34W flex/chino bottoms** for a sharp, modern silhouette.
