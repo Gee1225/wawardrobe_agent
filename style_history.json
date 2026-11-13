@@ -1447,5 +1447,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-11-13",
+    "ootd": {
+      "top": {
+        "id": "josbank-jacquard-beige",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Shirt Front Jacquard Sweater",
+        "color": "Cartouche Heather (Beige)"
+      },
+      "bottom": {
+        "id": "chino-slim-navy",
+        "brand": "Unknown",
+        "name": "Slim Rotation Chino Pants",
+        "color": "In the Navy"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
