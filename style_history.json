@@ -1470,5 +1470,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-16",
+    "ootd": {
+      "top": {
+        "id": "josbank-pima-lightblue",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Pima Cotton 1/4 Zip",
+        "color": "Light Blue"
+      },
+      "bottom": {
+        "id": "ct-trc0291nav-34-32",
+        "brand": "Charles Tyrwhitt",
+        "name": "Classic Fit Casual Stretch Chinos",
+        "color": "Navy"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
