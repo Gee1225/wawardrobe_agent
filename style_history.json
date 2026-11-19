@@ -1539,5 +1539,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-19",
+    "ootd": {
+      "top": {
+        "id": "thomas-stone-white",
+        "brand": "Thomas Stone",
+        "name": "White Shirt",
+        "color": "White"
+      },
+      "bottom": {
+        "id": "ct-trc0290afb",
+        "brand": "Charles Tyrwhitt",
+        "name": "Casual Stretch Chinos",
+        "color": "Airforce Blue"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
