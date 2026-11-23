@@ -1585,5 +1585,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-11-23",
+    "ootd": {
+      "top": {
+        "id": "zara-brown-sweater",
+        "brand": "Zara",
+        "name": "Polyester Brown Sweater",
+        "color": "Brown"
+      },
+      "bottom": {
+        "id": "flex-slim-dark-gray",
+        "brand": "Unknown",
+        "name": "Slim Built-In Flex Five-Pocket Pants",
+        "color": "Dark Gray"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
