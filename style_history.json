@@ -1608,5 +1608,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-11-24",
+    "ootd": {
+      "top": {
+        "id": "ct-csr2134afb",
+        "brand": "Charles Tyrwhitt",
+        "name": "Textured Flannel Shirt",
+        "color": "Airforce Blue"
+      },
+      "bottom": {
+        "id": "chino-straight-black-jack",
+        "brand": "Unknown",
+        "name": "Straight Rotation Chino Pants",
+        "color": "Black Jack"
+      },
+      "belt": {
+        "id": "buckley-belt-brown",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Brown"
+      }
+    }
   }
 ]
