@@ -1631,5 +1631,28 @@
         "color": "Brown"
       }
     }
+  },
+  {
+    "date": "2026-11-25",
+    "ootd": {
+      "top": {
+        "id": "jcrew-rugby-navy",
+        "brand": "J.Crew Factory",
+        "name": "Rugby Pullover Sweatshirt",
+        "color": "Navy"
+      },
+      "bottom": {
+        "id": "ct-trc0270stn-32w-34l",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Stone"
+      },
+      "belt": {
+        "id": "buckley-belt-cognac",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Cognac"
+      }
+    }
   }
 ]
