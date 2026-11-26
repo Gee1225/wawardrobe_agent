@@ -1654,5 +1654,28 @@
         "color": "Cognac"
       }
     }
+  },
+  {
+    "date": "2026-11-26",
+    "ootd": {
+      "top": {
+        "id": "jcrew-thermal-green",
+        "brand": "J.Crew Factory",
+        "name": "Long-sleeve Thermal Crewneck Tee",
+        "color": "Smoke Teal (Green)"
+      },
+      "bottom": {
+        "id": "levi-signature-jeans",
+        "brand": "Levi Strauss & Co",
+        "name": "Signature Jeans",
+        "color": "Blue"
+      },
+      "belt": {
+        "id": "buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
