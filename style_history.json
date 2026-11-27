@@ -1677,5 +1677,28 @@
         "color": "Black"
       }
     }
+  },
+  {
+    "date": "2026-11-27",
+    "ootd": {
+      "top": {
+        "id": "josbank-jacquard-beige",
+        "brand": "Jos. A. Bank",
+        "name": "Tailored Fit Shirt Front Jacquard Sweater",
+        "color": "Cartouche Heather (Beige)"
+      },
+      "bottom": {
+        "id": "ct-trc0270blk-32w-34l",
+        "brand": "Charles Tyrwhitt",
+        "name": "Ultimate Non-Iron Chinos",
+        "color": "Black"
+      },
+      "belt": {
+        "id": "bb-the-buckley-belt-black",
+        "brand": "Buckley Belts",
+        "name": "The Buckley Belt",
+        "color": "Black"
+      }
+    }
   }
 ]
